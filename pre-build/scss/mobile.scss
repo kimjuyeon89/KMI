@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import '_mixins','_function';
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    img{pointer-events: none;}
+}
+
+@media screen and (max-width: 500px) {
+    
+}

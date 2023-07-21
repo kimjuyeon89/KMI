@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+@import '_mixins','_function';
+
+div{@include font(rem(60px),'pre Bold',#000);}
