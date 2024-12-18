@@ -1,0 +1,223 @@
+.tab-area {
+  width: 100%;
+}
+.tab {
+  > ul {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+  }
+  li,
+  .btn-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    white-space: nowrap;
+  }
+  .btn-tab {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: var(--krds-gray-70);
+    transition: all 0.3s;
+    font-weight: 500;
+    &:not(:disabled):hover {
+      border-radius: 0.6rem;
+      transition: all 0.3s;
+    }
+    &:not(:disabled):active {
+      transition: all 0.3s;
+    }
+    &[disabled] {
+      color: var(--krds-gray-50);
+      cursor: default;
+    }
+  }
+  li {
+    flex-grow: 0;
+    width: 100%; 
+    max-width: 240px;
+  }
+  // &.full {
+  // 	width: 100%;
+  // 	.btn-tab {
+  // 		height: var(--#{$prefix}tab-h-full) !important;
+  // 		font-size: var(--#{$prefix}tab-fz-full) !important;
+  // 	}
+  // 	> ul {
+  // 		@include group-wrap;
+  // 		> li {
+  // 			@include equal-width;
+  // 		}
+  // 	}
+  // }
+  // &.fill {
+  // 	.btn-tab {
+  // 		height: var(--#{$prefix}tab-h-fill);
+  // 		padding: 0 var(--#{$prefix}tab-px-fill);
+  // 		font-size: var(--#{$prefix}tab-fz-fill);
+  // 	}
+  // 	.active {
+  // 		.btn-tab {
+  // 			background-color: var(--#{$prefix}secondary);
+  // 			border-color: var(--#{$prefix}secondary);
+  // 			color: #fff;
+  // 		}
+  // 	}
+  // 	> ul {
+  // 		> li {
+  // 			& + li {
+  // 				margin-left: var(--#{$prefix}tab-ml-fill);
+  // 			}
+  // 			.btn-tab {
+  // 				border-radius: var(--#{$prefix}tab-rd-fill);
+  // 			}
+  // 		}
+  // 	}
+  // 	&.full {
+  // 		.btn-tab {
+  // 			border: 1px solid var(--#{$prefix}secondary-20);
+  // 		}
+  // 		.active {
+  // 			.btn-tab {
+  // 				background-color: var(--#{$prefix}secondary);
+  // 				border-color: var(--#{$prefix}secondary);
+  // 				color: #fff;
+  // 			}
+  // 		}
+  // 		> ul {
+  // 			> li {
+  // 				& + li {
+  // 					margin-left: 0;
+  // 					.btn-tab {
+  // 						border-left: none;
+  // 					}
+  // 				}
+  // 				.btn-tab {
+  // 					border-radius: 0;
+  // 				}
+  // 				&:first-of-type {
+  // 					.btn-tab {
+  // 						border-top-left-radius: var(--#{$prefix}tab-rd-full);
+  // 						border-bottom-left-radius: var(--#{$prefix}tab-rd-full);
+  // 					}
+  // 				}
+  // 				&:last-of-type {
+  // 					.btn-tab {
+  // 						border-top-right-radius: var(--#{$prefix}tab-rd-full);
+  // 						border-bottom-right-radius: var(--#{$prefix}tab-rd-full);
+  // 					}
+  // 				}
+  // 			}
+  // 		}
+  // 	}
+  // }
+  &.line {
+    > ul {
+      justify-content: center;
+      border-bottom: 1px solid var(--grayscale-20);
+      overflow: hidden;
+    }
+
+    .btn-tab {
+      height: 52px;
+      padding: 20px 10px;
+      font-size: calc(max(16px,1.1458vw));
+      width: 100%;
+      &:before {
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        content: "";
+        width: 0;
+        height: 0.2rem;
+        background-color: var(--primary-50);
+        transition: 0.4s ease-in-out;
+      }
+    }
+    .active {
+      .btn-tab {
+        color: var(--primary-50);
+        &:before {
+          position: absolute;
+          left: 0;
+          width: 100%;
+        }
+        font-weight: 700;
+      }
+    }
+    > ul {
+      > li {
+        & + li {
+          margin-left: 10px;
+        }
+      }
+    }
+    &.full {
+      .btn-tab {
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+        border-bottom: 2px solid var(--krds-gray-20);
+        &:before {
+          bottom: -0.2rem;
+          height: 0.4rem;
+        }
+        &:hover,
+        &:active {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+      > ul {
+        > li {
+          & + li {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-conts {
+  display: none;
+  margin-top: 40px;
+  padding-top: 60px;
+  /*position: absolute;
+	z-index: -1;
+	opacity: 0;
+	transition: $transition-fade;*/
+  &.active {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    /*position: relative;
+		z-index: auto;
+		opacity: 1;*/
+  }
+}
+
+//mobile only
+// @include mobile {
+// 	.tab-conts {
+// 		margin-top: var(--#{$prefix}spacer-10);
+// 		&.active {
+// 			gap: var(--#{$prefix}spacer-8);
+// 		}
+// 	}
+// }
+
+
+@media screen and (max-width: 768px) {
+
+  .tab.line > ul{
+    padding-inline: 80px;
+  }
+  
+}

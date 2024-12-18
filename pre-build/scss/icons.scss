@@ -1,0 +1,136 @@
+.ico {
+  display: inline-flex;
+  transition: inherit;
+
+&.arrow-up{
+  width: 20px; height: 20px; 
+  background: url(../images/common/ico/ico-arrow-up.svg) no-repeat center;
+}
+&.arrow-up-wh{
+  width: 16px; height: 16px; 
+  background: url(../images/common/ico/ico-arrow-up-wh.svg) no-repeat center;
+}
+&.arrow-down{
+  width: 20px; height: 20px; 
+  background: url(../images/common/ico/ico-arrow-down.svg) no-repeat center;
+}
+&.arrow-down-wh{
+  width: 16px; height: 16px; 
+  background: url(../images/common/ico/ico-arrow-down-wh.svg) no-repeat center;
+}
+&.search-wh{
+  width:24px; height: 24px;
+  background: url(../images/common/ico/ico-search-wh.png)
+  no-repeat center;
+}
+
+&.close{
+  width:24px; height: 24px;
+  background: url(../images/common/ico/ico-close.png)
+  no-repeat center;
+}
+
+&.naver{
+  width:14px; height: 14px;
+  background: url(../images/common/ico/ico-naver.png)
+  no-repeat center;
+}
+&.facebook{
+  width:14px; height: 14px;
+  background: url(../images/common/ico/ico-facebook.png)
+  no-repeat center;
+}
+&.youtube{
+  width:14px; height: 14px;
+  background: url(../images/common/ico/ico-youtube.png)
+  no-repeat center;
+}
+&.insta{
+  width:14px; height: 14px;
+  background: url(../images/common/ico/ico-insta.png)
+  no-repeat center;
+}
+&.kakao{
+  width:14px; height: 14px;
+  background: url(../images/common/ico/ico-kakao.png)
+  no-repeat center;
+}
+&.link-arrow{
+  width:20px; height: 20px; border-radius: 100%;
+  background: #353840 url(../images/common/ico/ico-link-arrow.png)
+  no-repeat center;
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+
+&.bookmark{
+  width:16px; height: 16px;
+  background: url(../images/common/ico/ico-bookmark.png)
+  no-repeat center;
+}
+&.home{
+  width:20px; height: 20px;
+  background: url(../images/common/ico/ico-home.png)
+  no-repeat center;
+}
+&.file{
+  width:20px; height: 20px;
+  background: url(../images/common/ico/ico-file.png)
+  no-repeat center;
+}
+&.arrow-left{
+  width:16px; height: 16px;
+  background: url(../images/common/ico/ico-arrow-left.png)
+  no-repeat center;
+}
+&.arrow-left-double{
+  width:16px; height: 16px;
+  background: url(../images/common/ico/ico-arrow-left-double.png)
+  no-repeat center;
+}
+&.arrow-right-double{
+  width:16px; height: 16px;
+  background: url(../images/common/ico/ico-arrow-right-double.png)
+  no-repeat center;
+}
+&.arrow-right{
+  width:16px; height: 16px;
+  background: url(../images/common/ico/ico-arrow-right.png)
+  no-repeat center;
+}
+&.header-menu{
+  width:24px; height: 24px;
+  background: url(../images/common/ico/ico-header-menu.svg)
+  no-repeat center;
+}
+&.header-close{
+  width:24px; height: 24px;
+  background: url(../images/common/ico/ico-header-close.png)
+  no-repeat center;
+}
+
+&.pre-link{
+  width:20px; height: 20px;
+  background: url(../images/common/ico/ico-pre-link.png)
+  no-repeat center;
+  &.disabled{
+    background: url(../images/common/ico/ico-pre-link_disabled.png)
+  no-repeat center;
+  }
+}
+&.next-link{
+  width:20px; height: 20px;
+  background: url(../images/common/ico/ico-next-link.png)
+  no-repeat center;
+  &.disabled{
+    background: url(../images/common/ico/ico-next-link_disable.png)
+  no-repeat center;
+  }
+}
+
+&.global{
+  width:24px; height: 24px;
+  background: url(../images/common/ico/ico-global.png)
+  no-repeat center;
+}
+}

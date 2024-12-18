@@ -1,3 +1,52 @@
 @charset "utf-8";
 
 @import '_mixins','_function';
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-area{
+  width:100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn{
+  display: inline-flex;
+  column-gap: 5px;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  align-items: center;
+  transition: all ease-in-out .2s;
+  height: 60px;
+  min-width: 160px;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  &.sm{
+    min-width: 120px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &.md{
+
+  }
+  &.lg{
+
+  }
+  &.bg{
+    &-primary{
+      background-color: var(--primary-50);
+      color: #fff;
+    }
+    &-white{
+      background-color: var(--grayscale-0);
+      color: var(--primary-50)
+    }
+  }
+}

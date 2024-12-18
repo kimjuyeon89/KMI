@@ -1,15 +1,316 @@
 @charset "utf-8";
 
-@import '_mixins','_function';
+@import "_mixins", "_function";
 
-@media screen and (max-width: 1024px) {
-    
+/* 1280px 이하 화면 크기 스타일 */
+@media screen and (max-width: 1280px) {
+  #header {
+    .header-container .header-wrap .weather-header {
+      display: none;
+    }
+    .qmenu .qmenu-item {
+      &.last {
+        display: none;
+      }
+    }
+    .q-allmenu {
+      display: none;
+    }
+    .util .util-list .util-item {
+      &.my-page,
+      &.lang {
+        display: none;
+      }
+    }
+  }
+
+  .side-wrap {
+    right: 16px;
+    .side-bar {
+      display: none;
+    }
+  }
+
+  .pagination-wrap {
+    display: none;
+  }
+  .page-wrap {
+    margin-block: 100px 80px;
+  }
+  #header .gnb-wrap.open{
+    display: none;
+  }
 }
 
+/* 768px 이하 화면 크기 스타일 */
 @media screen and (max-width: 768px) {
-    img{pointer-events: none;}
+  img {
+    pointer-events: none;
+  }
+
+  .qmenu-wrap {
+    flex-direction: column;
+  }
+
+  #header .qmenu-wrap .qmenu:first-child {
+    margin-right: 0;
+  }
+  #header .qmenu-wrap.open {
+    height: 300px;
+  }
+
+  .footer {
+    padding: 20px 16px;
+    .footer-container .footer-top .footer-extra {
+      display: none;
+    }
+    .footer-top {
+      flex-direction: column;
+
+      .txt-left {
+        order: 2; /* 왼쪽 텍스트를 두 번째로 배치 */
+      }
+      .txt-right {
+        order: 1; /* 오른쪽 텍스트를 첫 번째로 배치 */
+        img {
+          display: none;
+        }
+      }
+      .footer-info .flex {
+        white-space: nowrap;
+        flex-direction: column;
+      }
+    }
+    .footer-bottom {
+      flex-direction: column;
+    }
+  }
+
+  .page-search-wrap {
+    margin-bottom: 20px;
+    .search-wrap .search-select {
+      width: 31px;
+    }
+  
+  }
+  #header.is-search .header-search{height: 338px}
+  #header .header-search .container .search-close-btn{
+    right:26px;
+    top:24px;
+  }
+  #header .header-search .container .search-wrap .search-bar .s-logo-box{
+    margin-left: 0;
+    margin-right: 0;
+  img{  &:nth-child(1){
+      width:200px;
+    }
+    &:nth-child(2){
+      width:100px;
+    }}
+  }
+  #header .header-search .container .search-wrap .search-bar .s-input-box input{
+    height:64px;
+  }
+  #header .header-search .container .search-wrap .search-bar .s-input-box .search-btn{
+    width:48px;
+    height: 48px;
+    right:12px;
+  }
+
+  .page-top {
+    .wrap .content .img-wrap img {
+      margin-top: 190px;
+    }
+    .wrap .fixed-textbox {
+      font-size: 32px;
+      top: 100px;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+  .page-top .sub-nav .nav-list .nav-item{
+    font-size: 14px;
+  }
 }
+
 
 @media screen and (max-width: 500px) {
-    
+}
+
+.container-s,
+.container-m,
+.container,
+.container-l {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.gutter-xl.container-s,
+.gutter-xl.container-m,
+.gutter-xl.container,
+.gutter-xl.container-l {
+  padding-left: calc(max(4.8rem, 4.1667vw));
+  padding-right: calc(max(4.8rem, 4.1667vw));
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-xl.container-s,
+  .gutter-xl.container-m,
+  .gutter-xl.container,
+  .gutter-xl.container-l {
+    padding-left: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-xl.container-s,
+  .gutter-xl.container-m,
+  .gutter-xl.container,
+  .gutter-xl.container-l {
+    padding-left: 5.1282vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-xl.container-s,
+  .gutter-xl.container-m,
+  .gutter-xl.container,
+  .gutter-xl.container-l {
+    padding-right: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-xl.container-s,
+  .gutter-xl.container-m,
+  .gutter-xl.container,
+  .gutter-xl.container-l {
+    padding-right: 5.1282vw;
+  }
+}
+
+.gutter-m.container-s,
+.gutter-m.container-m,
+.gutter-m.container,
+.gutter-m.container-l {
+  padding-left: 8.3333vw;
+  padding-right: 8.3333vw;
+}
+
+@media screen and (max-width: 1367px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-left: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-left: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-left: 5.1282vw;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-right: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-right: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-m.container-s,
+  .gutter-m.container-m,
+  .gutter-m.container,
+  .gutter-m.container-l {
+    padding-right: 5.1282vw;
+  }
+}
+
+.gutter-s.container-s,
+.gutter-s.container-m,
+.gutter-s.container,
+.gutter-s.container-l {
+  padding-left: 22.5vw;
+  padding-right: 22.5vw;
+}
+
+@media screen and (max-width: 1367px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-left: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-left: 5.1282vw;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-right: 10vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-right: calc(max(4rem, 4.6875vw));
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .gutter-s.container-s,
+  .gutter-s.container-m,
+  .gutter-s.container,
+  .gutter-s.container-l {
+    padding-right: 5.1282vw;
+  }
 }

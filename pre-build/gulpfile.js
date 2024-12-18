@@ -19,7 +19,7 @@ import cached from 'gulp-cached';
 import autoPrefixer from 'gulp-autoprefixer';
 
 var src = {
-    html : ['html/**/*.html','html/*.html'],
+    html : ['html/**/*.html','html/*.html','html/**/*.html'],
     include : ['html/include/*.html'],
     js : ['js/*.js','js/**/*.js'],
     css : ['scss/*.scss','scss/**/*.scss'],
@@ -56,7 +56,8 @@ function htmlComplie() {
     return gulp.src(src.html)
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: '@file'
+            basepath: '@file',
+            indent: true
         }))
         .pipe(cached('html'))
         .pipe(gulp.dest(paths.html))
@@ -132,8 +133,4 @@ function brwSync(){
     });
 }
 
-
 gulp.task('default', gulp.parallel(gulp.series(htmlComplie,includeComplie, scssCompile, concatJs, imgs),brwSync, watchFiles));
-
-
-

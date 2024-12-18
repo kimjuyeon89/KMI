@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    @@include('include/head.html')
+     @@include('include/head.html',{
+        "styleguide": false
+    })
 </head>
 <body>
     <!-- root -->
     <div id="root">
         @@include('include/header.html')
-        <div>안녕하세요?</div>
+     
+        
         @@include('include/footer.html')
+        @@include('include/sidebar.html')
     </div>
-    <!-- //rot -->
+    <!-- //root -->
 </body>
 </html>

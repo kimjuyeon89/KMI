@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import '_mixins','_function';
+
+:root{
+    /* font */
+    --font-r: 'pre Regular';
+    --font-m: 'pre Medium';
+    --font-sb: 'pre SemiBold';
+    --font-b: 'pre Bold';
+
+    /* font size */
+    $font-family-base: "Pretendard GOV", sans-serif !default;
+    $font-size-root: 62.5% !default; //10px 1rem으로 설정
+
+    /* color */
+   /* Primary Colors */
+   --primary-0: #ffffff;
+   --primary-5: #edefff;
+   --primary-10: #d5d9f6;
+   --primary-20: #aab3ee;
+   --primary-30: #808ee5;
+   --primary-40: #5668dc;
+   --primary-50: #1f3097;
+   --primary-60: #19277b;
+   --primary-70: #16226a;
+   --primary-80: #10184c;
+   --primary-90: #090e2d;
+   --primary-100: #000000;
+ 
+   /* Point Colors */
+   --point-0: #ffffff;
+   --point-5: #eff5ff;
+   --point-10: #d3e1fb;
+   --point-20: #80b3ff;
+   --point-30: #4d8bff;
+   --point-40: #0069ff;
+   --point-50: #0042ff;
+   --point-60: #002eb3;
+   --point-70: #002180;
+   --point-80: #00144d;
+   --point-90: #010e34;
+   --point-100: #000000;
+ 
+   /* Grayscale Colors */
+   --grayscale-0: #ffffff;
+   --grayscale-5: #f8f8f8;
+   --grayscale-10: #f0f0f0;
+   --grayscale-20: #e4e4e4;
+   --grayscale-30: #d8d8d8;
+   --grayscale-40: #c6c6c6;
+   --grayscale-50: #8e8e8e;
+   --grayscale-60: #717171;
+   --grayscale-70: #555555;
+   --grayscale-80: #2d2d2d;
+   --grayscale-90: #1d1d1d;
+   --grayscale-100: #000000;
+ 
+
+    /* gray scale - text/icon/bg */
+   
+
+    /* bg */
+    
+}/* Background color utility classes */
+$color-prefixes: 'primary', 'point', 'grayscale';
+$color-values: (0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+@each $prefix in $color-prefixes {
+  @each $value in $color-values {
+    .bg-#{$prefix}-#{$value} {
+      background-color: var(--#{$prefix}-#{$value});
+    }
+  }
+}
