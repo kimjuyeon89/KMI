@@ -1,7 +1,7 @@
 [build]
-  base = "pre-build"                 # Base directory
+  base = "pre-build"                 # Base directory 설정
   command = "npm install && npm run build"  # 빌드 명령어
   publish = "../build/html"          # 빌드 결과물의 상대 경로
 
 [build.environment]
-  NODE_VERSION = "14.17.6"   # 로컬 Node.js 버전에 맞게 설정 (예: 18, 16)
+  NODE_VERSION = "14.17.6"           # Node.js 버전
