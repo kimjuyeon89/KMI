@@ -53,16 +53,16 @@ var scssOptions = {
 gulp.task('build', gulp.series(htmlComplie, includeComplie, scssCompile, concatJs, imgs));
 
 function htmlComplie() {
-    return gulp.src(src.html)
+    return gulp.src(src.html) // 소스 HTML 파일들
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file',
             indent: true
         }))
-        .pipe(cached('build/html'))
-        .pipe(gulp.dest(paths.html)) 
-        .pipe(browserSync.reload({stream:true})) 
-};
+        .pipe(cached('html')) // 캐시를 위한 key (목적에 맞게 설정)
+        .pipe(gulp.dest('../build/html')) // 빌드 결과물을 build/html에 저장
+        .pipe(browserSync.reload({ stream: true })); // 브라우저 리로드
+}
 
 function includeComplie() {
     return gulp.src(src.include)
