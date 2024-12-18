@@ -59,7 +59,7 @@ function htmlComplie() {
             basepath: '@file',
             indent: true
         }))
-        .pipe(cached('html'))
+        .pipe(cached('build/html'))
         .pipe(gulp.dest(paths.html)) 
         .pipe(browserSync.reload({stream:true})) 
 };
