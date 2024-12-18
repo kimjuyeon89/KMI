@@ -5,7 +5,8 @@ pre-build/.DS_Store
 .idea
 .DS_Store
 
-
+# 빌드 결과물은 Git에 포함 (Netlify에서 배포하기 위함)
+!build/
 # Created by https://www.toptal.com/developers/gitignore/api/node,intellij,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,intellij,macos,windows
 
