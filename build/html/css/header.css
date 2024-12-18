@@ -1215,16 +1215,17 @@
 	text-decoration: underline;
 	color: var(--primary-50);
 	text-underline-offset: 2px;
+	font-weight: 700;
 }
 
-/* line 846, scss/header.scss */
+/* line 847, scss/header.scss */
 .side-wrap .side-bar .side-bottom {
 	position: absolute;
 	width: 100px;
 	top: 318px;
 }
 
-/* line 850, scss/header.scss */
+/* line 851, scss/header.scss */
 .side-wrap .side-bar .side-bottom .help-section {
 	height: 100%;
 	width: 100%;
@@ -1238,12 +1239,12 @@
 	transition: all 0.3s;
 }
 
-/* line 859, scss/header.scss */
+/* line 860, scss/header.scss */
 .side-wrap .side-bar .side-bottom .help-section.close {
 	border-radius: 12px 12px 0 0;
 }
 
-/* line 862, scss/header.scss */
+/* line 863, scss/header.scss */
 .side-wrap .side-bar .side-bottom .help-section .help-button {
 	background-color: #ffffff;
 	color: var(--primary-50);
@@ -1255,7 +1256,7 @@
 	margin-bottom: 8px;
 }
 
-/* line 873, scss/header.scss */
+/* line 874, scss/header.scss */
 .side-wrap .side-bar .side-bottom .help-section .contact-number {
 	height: 100%;
 	width: 100%;
@@ -1263,7 +1264,7 @@
 	font-weight: 700;
 }
 
-/* line 881, scss/header.scss */
+/* line 882, scss/header.scss */
 .side-wrap .side-bar .side-bottom .expand-section {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1282,7 +1283,7 @@
 	cursor: pointer;
 }
 
-/* line 894, scss/header.scss */
+/* line 895, scss/header.scss */
 .side-wrap .chat {
 	width: 100px;
 	height: 100px;
@@ -1293,7 +1294,7 @@
 	        transform: translateX(-50%);
 }
 
-/* line 902, scss/header.scss */
+/* line 903, scss/header.scss */
 .side-wrap .chat .rotating-background,
 .side-wrap .chat .center-image {
 	position: absolute;
@@ -1303,13 +1304,13 @@
 	        transform: translate(-50%, -50%);
 }
 
-/* line 910, scss/header.scss */
+/* line 911, scss/header.scss */
 .side-wrap .chat .rotating-background {
 	-webkit-animation: rotate360 10s linear infinite;
 	        animation: rotate360 10s linear infinite;
 }
 
-/* line 914, scss/header.scss */
+/* line 915, scss/header.scss */
 .side-wrap .chat .center-image {
 	z-index: 2;
 	display: -webkit-box;
@@ -1321,7 +1322,7 @@
 	position: relative;
 }
 
-/* line 920, scss/header.scss */
+/* line 921, scss/header.scss */
 .side-wrap .chat .center-image img {
 	-webkit-animation: fadeInOut 8s infinite;
 	        animation: fadeInOut 8s infinite;
@@ -1332,13 +1333,13 @@
 	        transform: translate(-50%, -50%);
 }
 
-/* line 928, scss/header.scss */
+/* line 929, scss/header.scss */
 .side-wrap .chat .center-image .center-image-1 {
 	-webkit-animation-delay: 0s;
 	        animation-delay: 0s;
 }
 
-/* line 932, scss/header.scss */
+/* line 933, scss/header.scss */
 .side-wrap .chat .center-image .center-image-2 {
 	-webkit-animation-delay: 4s;
 	        animation-delay: 4s;
@@ -1388,7 +1389,7 @@
 	}
 }
 
-/* line 957, scss/header.scss */
+/* line 958, scss/header.scss */
 .side-wrap .top-btn {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1419,18 +1420,18 @@
 	        box-shadow: 0 2px 8px 0 #919bb925;
 }
 
-/* line 978, scss/header.scss */
+/* line 979, scss/header.scss */
 .page-top {
 	position: relative;
 	top: calc(max(70px, 5.2083vw));
 }
 
-/* line 981, scss/header.scss */
+/* line 982, scss/header.scss */
 .page-top .wrap {
 	position: relative;
 }
 
-/* line 984, scss/header.scss */
+/* line 985, scss/header.scss */
 .page-top .wrap .fixed-textbox {
 	font-size: calc(max(50px,3.1250vw));
 	position: fixed;
@@ -1440,7 +1441,7 @@
 	font-weight: 700;
 }
 
-/* line 991, scss/header.scss */
+/* line 992, scss/header.scss */
 .page-top .wrap .fixed-textbox p {
 	color: var(--point-50);
 	font-size: calc(max(22px,1.1458vw));
@@ -1448,7 +1449,7 @@
 	margin-bottom: 24px;
 }
 
-/* line 999, scss/header.scss */
+/* line 1000, scss/header.scss */
 .page-top .wrap .content {
 	width: 100%;
 	display: -webkit-box;
@@ -1461,12 +1462,12 @@
 	/* 양옆 잘린 부분 숨김 */
 }
 
-/* line 1005, scss/header.scss */
+/* line 1006, scss/header.scss */
 .page-top .wrap .content .img-wrap {
 	position: relative;
 }
 
-/* line 1008, scss/header.scss */
+/* line 1009, scss/header.scss */
 .page-top .wrap .content .img-wrap img {
 	display: block;
 	width: 80%;
@@ -1487,7 +1488,7 @@
 	border-radius: 40px;
 }
 
-/* line 1022, scss/header.scss */
+/* line 1023, scss/header.scss */
 .page-top .sub-nav {
 	width: 100%;
 	display: -webkit-box;
@@ -1506,7 +1507,7 @@
 	transition: top 0.3s ease;
 }
 
-/* line 1031, scss/header.scss */
+/* line 1032, scss/header.scss */
 .page-top .sub-nav.sticky {
 	position: fixed;
 	top: calc(max(72px, 5.2083vw));
@@ -1517,7 +1518,7 @@
 	        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 1039, scss/header.scss */
+/* line 1040, scss/header.scss */
 .page-top .sub-nav .nav-list {
 	max-width: 1400px;
 	display: -webkit-box;
@@ -1527,7 +1528,7 @@
 	height: 100%;
 }
 
-/* line 1045, scss/header.scss */
+/* line 1046, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item {
 	border-right: 1px solid var(--grayscale-30);
 	position: relative;
@@ -1550,7 +1551,7 @@
 	        align-items: center;
 }
 
-/* line 1057, scss/header.scss */
+/* line 1058, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item .nav-current {
 	height: 100%;
 	width: 100%;
@@ -1565,7 +1566,7 @@
 	        align-items: center;
 }
 
-/* line 1066, scss/header.scss */
+/* line 1067, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item .sub-nav-container {
 	position: absolute;
 	top: 100%;
@@ -1579,7 +1580,7 @@
 	z-index: 1;
 }
 
-/* line 1077, scss/header.scss */
+/* line 1078, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item .sub-nav-container li {
 	height: 48px;
 	display: -webkit-box;
@@ -1596,7 +1597,7 @@
 	transition: all 0.3s;
 }
 
-/* line 1084, scss/header.scss */
+/* line 1085, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item .sub-nav-container li a {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1610,13 +1611,13 @@
 	font-weight: 500;
 }
 
-/* line 1092, scss/header.scss */
+/* line 1093, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item .sub-nav-container li:hover {
 	background: var(--point-5);
 	color: var(--primary-50);
 }
 
-/* line 1099, scss/header.scss */
+/* line 1100, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item.home {
 	-webkit-box-flex: unset;
 	    -ms-flex: unset;
@@ -1628,7 +1629,7 @@
 	border-left: 1px solid var(--grayscale-30);
 }
 
-/* line 1105, scss/header.scss */
+/* line 1106, scss/header.scss */
 .page-top .sub-nav .nav-list .nav-item.home a {
 	display: -webkit-box;
 	display: -ms-flexbox;

@@ -197,9 +197,10 @@
 .pagination-wrap .pagination button:hover, .pagination-wrap .pagination button.active {
 	background-color: var(--point-5);
 	border-radius: 8px;
+	font-weight: 700;
 }
 
-/* line 146, scss/component.scss */
+/* line 148, scss/component.scss */
 .pagination-wrap .pagination a {
 	font-size: 13px;
 	display: -webkit-box;
@@ -216,10 +217,10 @@
 	border-radius: 8px;
 	border: 1px solid var(--grayscale-30);
 	color: var(--grayscale-70);
-	font-weight: 700;
+	font-weight: 400;
 }
 
-/* line 158, scss/component.scss */
+/* line 160, scss/component.scss */
 .pagination-wrap .pagination a:hover, .pagination-wrap .pagination a.active {
 	background-color: var(--primary-50);
 	border: 1px solid var(--primary-50);
@@ -227,7 +228,7 @@
 	font-weight: 700;
 }
 
-/* line 169, scss/component.scss */
+/* line 171, scss/component.scss */
 .attachment-icon {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -245,12 +246,12 @@
 	background-color: var(--point-5);
 }
 
-/* line 178, scss/component.scss */
+/* line 180, scss/component.scss */
 .attachment-icon.bg-wh {
 	background-color: #fff;
 }
 
-/* line 183, scss/component.scss */
+/* line 185, scss/component.scss */
 .page-search-wrap {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -261,7 +262,7 @@
 	margin-bottom: 60px;
 }
 
-/* line 188, scss/component.scss */
+/* line 190, scss/component.scss */
 .page-search-wrap .search-bar {
 	padding-inline: 20px;
 	position: relative;
@@ -269,7 +270,7 @@
 	max-width: 686px;
 }
 
-/* line 193, scss/component.scss */
+/* line 195, scss/component.scss */
 .page-search-wrap .search-bar .search-dropdown {
 	position: absolute;
 	top: 100%;
@@ -281,18 +282,18 @@
 	top: 100%;
 }
 
-/* line 203, scss/component.scss */
+/* line 205, scss/component.scss */
 .page-search-wrap .search-bar .search-dropdown ul li {
 	height: 48px;
 	padding: 10px 24px;
 }
 
-/* line 207, scss/component.scss */
+/* line 209, scss/component.scss */
 .page-search-wrap .search-bar .search-dropdown ul li:hover {
 	background: var(--point-5);
 }
 
-/* line 213, scss/component.scss */
+/* line 215, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -303,7 +304,7 @@
 	position: relative;
 }
 
-/* line 217, scss/component.scss */
+/* line 219, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap .search-select {
 	position: absolute;
 	left: 32px;
@@ -320,22 +321,22 @@
 	        justify-content: space-between;
 }
 
-/* line 225, scss/component.scss */
+/* line 227, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap .search-select span {
 	font-size: 18px;
 }
 
-/* line 229, scss/component.scss */
+/* line 231, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap .search-input {
 	width: 100%;
 	height: calc(max(60px,3.5417vw));
-	border: 1px solid var(--grayscale-80);
+	border: 2px solid var(--grayscale-80);
 	border-radius: 50px;
 	padding: 20px 10px 20px calc(max(120px,12.9861vw));
 	font-size: 18px;
 }
 
-/* line 236, scss/component.scss */
+/* line 238, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap .search-input::-webkit-input-placeholder {
 	font-size: 18px;
 }
@@ -352,7 +353,7 @@
 	font-size: 18px;
 }
 
-/* line 240, scss/component.scss */
+/* line 242, scss/component.scss */
 .page-search-wrap .search-bar .search-wrap .search-btn {
 	position: absolute;
 	top: 50%;
@@ -374,14 +375,14 @@
 	background-color: var(--grayscale-80);
 }
 
-/* line 258, scss/component.scss */
+/* line 260, scss/component.scss */
 .page-inner .page-header {
 	border-bottom: 1px solid var(--grayscale-20);
 	padding-bottom: 40px;
 	margin-bottom: 40px;
 }
 
-/* line 262, scss/component.scss */
+/* line 264, scss/component.scss */
 .page-inner .page-header .section-label {
 	font-size: 22px;
 	color: var(--point-50);
@@ -389,14 +390,14 @@
 	margin-bottom: 12px;
 }
 
-/* line 268, scss/component.scss */
+/* line 270, scss/component.scss */
 .page-inner .page-header .page-title {
 	font-size: 40px;
 	margin-bottom: 32px;
 	font-weight: 700;
 }
 
-/* line 273, scss/component.scss */
+/* line 275, scss/component.scss */
 .page-inner .page-header .page-meta {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -407,30 +408,30 @@
 	gap: 12px;
 }
 
-/* line 277, scss/component.scss */
+/* line 279, scss/component.scss */
 .page-inner .page-header .page-meta span {
 	color: var(--grayscale-70);
 }
 
-/* line 280, scss/component.scss */
+/* line 282, scss/component.scss */
 .page-inner .page-header .page-meta .line {
 	width: 1px;
 	height: 12px;
 	background-color: var(--grayscale-20);
 }
 
-/* line 287, scss/component.scss */
+/* line 289, scss/component.scss */
 .page-inner .text-content {
 	margin-top: 40px;
 }
 
-/* line 289, scss/component.scss */
+/* line 291, scss/component.scss */
 .page-inner .text-content p {
 	font-size: 18px;
 	line-height: 180%;
 }
 
-/* line 294, scss/component.scss */
+/* line 296, scss/component.scss */
 .page-inner .attachment-box {
 	background-color: var(--grayscale-5);
 	display: -webkit-box;
@@ -440,17 +441,17 @@
 	margin-top: 60px;
 }
 
-/* line 299, scss/component.scss */
+/* line 301, scss/component.scss */
 .page-inner .attachment-box li {
 	margin-bottom: 8px;
 }
 
-/* line 301, scss/component.scss */
+/* line 303, scss/component.scss */
 .page-inner .attachment-box li:last-child {
 	margin-bottom: 0;
 }
 
-/* line 304, scss/component.scss */
+/* line 306, scss/component.scss */
 .page-inner .attachment-box li a {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -461,28 +462,28 @@
 	gap: 8px;
 }
 
-/* line 310, scss/component.scss */
+/* line 312, scss/component.scss */
 .page-inner .attachment-box li:hover, .page-inner .attachment-box li.active {
 	color: var(--primary-50);
 	font-weight: 500;
 }
 
-/* line 313, scss/component.scss */
+/* line 315, scss/component.scss */
 .page-inner .attachment-box li:hover .attachment-icon.bg-wh, .page-inner .attachment-box li.active .attachment-icon.bg-wh {
 	background-color: var(--primary-50);
 }
 
-/* line 315, scss/component.scss */
+/* line 317, scss/component.scss */
 .page-inner .attachment-box li:hover .attachment-icon.bg-wh .file, .page-inner .attachment-box li.active .attachment-icon.bg-wh .file {
 	background-image: url("../images/common/ico/ico-file-wh.png");
 }
 
-/* line 326, scss/component.scss */
+/* line 328, scss/component.scss */
 .page-inner .img-cont img {
 	width: 100%;
 }
 
-/* line 331, scss/component.scss */
+/* line 333, scss/component.scss */
 .page-inner .page-footer .page-nav {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -494,7 +495,7 @@
 	padding: 30px 40px;
 }
 
-/* line 336, scss/component.scss */
+/* line 338, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -505,7 +506,7 @@
 	gap: 12px;
 }
 
-/* line 340, scss/component.scss */
+/* line 342, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item .text {
 	white-space: nowrap;
 	overflow: hidden;
@@ -513,39 +514,39 @@
 	max-width: 300px;
 }
 
-/* line 347, scss/component.scss */
+/* line 349, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item.nav-prev .prev {
 	font-weight: 500;
 }
 
-/* line 352, scss/component.scss */
+/* line 354, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item.nav-next .next {
 	font-weight: 500;
 }
 
-/* line 357, scss/component.scss */
+/* line 359, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item.disabled {
 	color: var(--grayscale-50);
 }
 
-/* line 360, scss/component.scss */
+/* line 362, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item.disabled .ico.pre-link {
 	width: 20px;
 	height: 20px;
 	background: url(../images/common/ico/ico-pre-link_disabled.png) no-repeat center;
 }
 
-/* line 365, scss/component.scss */
+/* line 367, scss/component.scss */
 .page-inner .page-footer .page-nav .nav-item.disabled .ico.next-link {
 	background: url(../images/common/ico/ico-next-link_disable.png) no-repeat center;
 }
 
-/* line 372, scss/component.scss */
+/* line 374, scss/component.scss */
 .page-inner .page-footer .btn-area {
 	margin-top: 60px;
 }
 
-/* line 378, scss/component.scss */
+/* line 380, scss/component.scss */
 .card-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -553,7 +554,7 @@
 	padding: 20px;
 }
 
-/* line 385, scss/component.scss */
+/* line 387, scss/component.scss */
 .card-container .card-item {
 	position: relative;
 	overflow: hidden;
@@ -561,7 +562,7 @@
 	cursor: pointer;
 }
 
-/* line 391, scss/component.scss */
+/* line 393, scss/component.scss */
 .card-container .card-item .img-cont {
 	position: relative;
 	overflow: hidden;
@@ -569,7 +570,7 @@
 	margin-bottom: 24px;
 }
 
-/* line 397, scss/component.scss */
+/* line 399, scss/component.scss */
 .card-container .card-item .img-cont img {
 	width: 100%;
 	height: auto;
@@ -579,7 +580,7 @@
 	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-/* line 403, scss/component.scss */
+/* line 405, scss/component.scss */
 .card-container .card-item .img-cont::before {
 	content: "";
 	z-index: 1;
@@ -594,7 +595,7 @@
 	transition: opacity 0.3s ease;
 }
 
-/* line 416, scss/component.scss */
+/* line 418, scss/component.scss */
 .card-container .card-item .img-cont::after {
 	z-index: 2;
 	content: "";
@@ -625,7 +626,7 @@
 	pointer-events: none;
 }
 
-/* line 441, scss/component.scss */
+/* line 443, scss/component.scss */
 .card-container .card-item:hover .img-cont img {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
@@ -633,17 +634,17 @@
 	        filter: blur(2px);
 }
 
-/* line 446, scss/component.scss */
+/* line 448, scss/component.scss */
 .card-container .card-item:hover .img-cont::before {
 	opacity: 1;
 }
 
-/* line 450, scss/component.scss */
+/* line 452, scss/component.scss */
 .card-container .card-item:hover .img-cont::after {
 	opacity: 1;
 }
 
-/* line 456, scss/component.scss */
+/* line 458, scss/component.scss */
 .card-container .card-item .tag {
 	margin-bottom: 12px;
 	font-size: 14px;
@@ -655,17 +656,17 @@
 	width: fit-content;
 }
 
-/* line 464, scss/component.scss */
+/* line 466, scss/component.scss */
 .card-container .card-item .tag.blue {
 	background: var(--point-10);
 }
 
-/* line 467, scss/component.scss */
+/* line 469, scss/component.scss */
 .card-container .card-item .tag.green {
 	background: #c4e5e8;
 }
 
-/* line 472, scss/component.scss */
+/* line 474, scss/component.scss */
 .card-container .card-item .title {
 	margin-bottom: 24px;
 	font-size: 20px;
@@ -678,7 +679,7 @@
 	text-overflow: ellipsis;
 }
 
-/* line 484, scss/component.scss */
+/* line 486, scss/component.scss */
 .card-container .card-item .date {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -691,7 +692,7 @@
 	        justify-content: space-between;
 }
 
-/* line 488, scss/component.scss */
+/* line 490, scss/component.scss */
 .card-container .card-item .date span {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -703,7 +704,7 @@
 	color: var(--grayscale-70);
 }
 
-/* line 498, scss/component.scss */
+/* line 500, scss/component.scss */
 .card-container .card-item.video .img-cont::after {
 	z-index: 2;
 	content: "";
@@ -734,7 +735,7 @@
 	pointer-events: none;
 }
 
-/* line 522, scss/component.scss */
+/* line 524, scss/component.scss */
 .card-container .card-item.video:hover .img-cont::after {
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 80px;
@@ -742,7 +743,7 @@
 }
 
 @media (max-width: 768px) {
-	/* line 378, scss/component.scss */
+	/* line 380, scss/component.scss */
 	.card-container {
 		grid-template-columns: 1fr;
 		gap: 15px;
