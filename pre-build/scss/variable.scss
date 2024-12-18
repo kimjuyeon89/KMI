@@ -13,6 +13,40 @@
     $font-family-base: "Pretendard GOV", sans-serif !default;
     $font-size-root: 62.5% !default; //10px 1rem으로 설정
 
+    /* Display */
+    --pc-display-lg: 60px;
+    --pc-display-md: 50px;
+    --pc-display-sm: 40px;
+  
+    /* Heading */
+    --pc-heading-lg: 36px;
+    --pc-heading-md: 32px;
+    --pc-heading-sm: 28px;
+  
+    /* Title */
+    --pc-title-lg: 26px;
+    --pc-title-md: 22px;
+    --pc-title-sm: 18px;
+  
+    /* Label */
+    --pc-label-lg: 22px;
+    --pc-label-md: 18px;
+    --pc-label-sm: 16px;
+    --pc-label-xs: 14px;
+  
+    /* Body */
+    --pc-body-lg: 20px;
+    --pc-body-md: 18px;
+    --pc-body-sm: 16px;
+    --pc-body-xs: 14px;
+  
+    /* Font Weights */
+    --fw-r: 400;
+    --fw-m: 500;
+    --fw-b: 700;
+
+
+
     /* color */
    /* Primary Colors */
    --primary-0: #ffffff;
@@ -42,34 +76,68 @@
    --point-90: #010e34;
    --point-100: #000000;
  
-   /* Grayscale Colors */
-   --grayscale-0: #ffffff;
-   --grayscale-5: #f8f8f8;
-   --grayscale-10: #f0f0f0;
-   --grayscale-20: #e4e4e4;
-   --grayscale-30: #d8d8d8;
-   --grayscale-40: #c6c6c6;
-   --grayscale-50: #8e8e8e;
-   --grayscale-60: #717171;
-   --grayscale-70: #555555;
-   --grayscale-80: #2d2d2d;
-   --grayscale-90: #1d1d1d;
-   --grayscale-100: #000000;
+   /* gray Colors */
+   --gray-0: #ffffff;
+   --gray-5: #f8f8f8;
+   --gray-10: #f0f0f0;
+   --gray-20: #e4e4e4;
+   --gray-30: #d8d8d8;
+   --gray-40: #c6c6c6;
+   --gray-50: #8e8e8e;
+   --gray-60: #717171;
+   --gray-70: #555555;
+   --gray-80: #2d2d2d;
+   --gray-90: #1d1d1d;
+   --gray-100: #000000;
  
 
     /* gray scale - text/icon/bg */
    
 
-    /* bg */
+ /* Base Box Shadows */
+ --shadow-base: 0px 2px 8px rgba(145, 155, 185, 0.25);
+ --shadow-base-blur: 0px 2px 16px rgba(145, 155, 185, 0.25); 
+
+ /* Black Box Shadows */
+ --shadow-black: 0px 2px 8px rgba(0, 0, 0, 0.25);
+ --shadow-black-blur: 0px 2px 16px rgba(0, 0, 0, 0.25);
     
 }/* Background color utility classes */
-$color-prefixes: 'primary', 'point', 'grayscale';
-$color-values: (0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 
-@each $prefix in $color-prefixes {
-  @each $value in $color-values {
-    .bg-#{$prefix}-#{$value} {
-      background-color: var(--#{$prefix}-#{$value});
-    }
+@media (max-width: 768px) {
+  :root {
+    /* Display */
+    --mo-display-lg: 36px;
+    --mo-display-md: 32px;
+    --mo-display-sm: 28px;
+
+    /* Heading */
+    --mo-heading-lg: 26px;
+    --mo-heading-md: 24px;
+    --mo-heading-sm: 22px;
+
+    /* Title */
+    --mo-title-lg: 22px;
+    --mo-title-md: 18px;
+    --mo-title-sm: 16px;
+
+    /* Label */
+    --mo-label-lg: 18px;
+    --mo-label-md: 16px;
+    --mo-label-sm: 14px;
+    --mo-label-xs: 13px;
+
+    /* Body */
+    --mo-body-lg: 18px;
+    --mo-body-md: 16px;
+    --mo-body-sm: 14px;
+    --mo-body-xs: 13px;
+
+    /* Font Weights */
+    --mo-font-regular: 400;
+    --mo-font-medium: 500;
+    --mo-font-bold: 700;
   }
 }
+
+

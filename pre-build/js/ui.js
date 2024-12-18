@@ -352,16 +352,16 @@ $(window).on('scroll', function () {
   } else {
     $subNav.removeClass('sticky')
     .css({
-      'border-block': '1px solid var(--grayscale-30)' // border-bottom 추가
+      'border-block': '1px solid var(--gray-30)' // border-bottom 추가
     });
   }
 });
 
 
 // 페이지 탑 이미지 확대 이벤트
-const $textbox = $("#textbox");
+const $textbox = $(".fixed-textbox");
 const $paragraph = $textbox.find("p");
-const $image = $("#image");
+const $image = $(".zoom-img");
 
 // 텍스트 효과 변수
 let initialTop = 220; // 초기 위치

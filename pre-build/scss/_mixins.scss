@@ -36,3 +36,20 @@ scrollbar-track-color:#fff;scrollbar-base-color: #efefef;
 }
 
 
+@mixin font($size, $weight: var(--font-weight-regular)) {
+    font-size: $size;
+    font-weight: $weight;
+  }
+
+
+  //컬러
+  $color-prefixes: 'primary', 'point', 'gray';
+$color-values: (0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+@each $prefix in $color-prefixes {
+  @each $value in $color-values {
+    .bg-#{$prefix}-#{$value} {
+      background-color: var(--#{$prefix}-#{$value});
+    }
+  }
+}

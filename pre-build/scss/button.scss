@@ -1,52 +1,95 @@
 @charset "utf-8";
 
 @import '_mixins','_function';
-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// Color Variables
+// Button Sizes
 .btn-area{
-  width:100%; 
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
-
-.btn{
+// Base button styles
+.btn {
   display: inline-flex;
-  column-gap: 5px;
-  justify-content: center;
-  vertical-align: top;
-  text-align: center;
   align-items: center;
-  transition: all ease-in-out .2s;
-  height: 60px;
-  min-width: 160px;
-  padding: 13px 20px;
+  justify-content: center;
+  column-gap: 5px;
+  font-weight: var(-fw-b);
+  text-align: center;
   border-radius: 30px;
-  font-weight: 500;
-  &.sm{
-    min-width: 120px;
-    height: 48px;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  &.md{
+  border: none;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
 
-  }
-  &.lg{
 
-  }
-  &.bg{
-    &-primary{
-      background-color: var(--primary-50);
-      color: #fff;
+  $button-sizes: (
+  "lg": (160px, 60px),
+  "md": (140px, 52px),
+  "sm": (120px, 48px)
+);
+  // Sizes
+  @each $size, $dimensions in $button-sizes {
+    &.#{$size} {
+      min-width: nth($dimensions, 1);
+      height: nth($dimensions, 2);
     }
-    &-white{
-      background-color: var(--grayscale-0);
-      color: var(--primary-50)
+  }
+
+  // Filled Buttons
+  &.fill {
+    &.primary {
+      background-color: var(--primary-50);
+      color: var(--gray-0);
+
+      &:hover {
+        background-color: var(--primary-10);
+      }
+    }
+
+    &.gray {
+      background-color:var(--gray-80);
+      color: var(--gray-0);
+
+      &:hover {
+        background-color:var(--gray-100);
+      }
+    
+    }
+    &:disabled {
+      background-color: var(--gray-30);
+      color: var(--gray-50);
+      cursor: not-allowed;
+    }
+  }
+
+  // Outlined Buttons
+  &.outlined {
+    border: 1px solid;
+
+    &.primary {
+      border-color: var(--primary-50);
+      color: var(--primary-50);
+      background-color: var(--gray-0);
+
+      &:hover {
+        background-color: var(--primary-5);
+      }
+    
+    }
+
+    &.gray {
+      border-color: var(--gray-70);
+      background-color: var(--gray-0);
+
+      &:hover {
+        background-color:var(--gray-10);
+      }
+    }
+    &:disabled {
+      border-color: var(--gray-20);
+      color: var(--gray-50);
+      cursor: not-allowed;
     }
   }
 }

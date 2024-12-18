@@ -57,7 +57,8 @@ function htmlComplie() {
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file',
-            indent: true
+            indent: true,
+            context: {} // 기본 컨텍스트 (필요시 추가 가능)
         }))
         .pipe(cached('html')) // 캐시를 위한 key (목적에 맞게 설정)
         .pipe(gulp.dest('../build/html')) // 빌드 결과물을 build/html에 저장

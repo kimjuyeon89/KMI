@@ -118,7 +118,7 @@
   &.line {
     > ul {
       justify-content: center;
-      border-bottom: 1px solid var(--grayscale-20);
+      border-bottom: 1px solid var(--gray-20);
       overflow: hidden;
     }
 
@@ -146,7 +146,7 @@
           left: 0;
           width: 100%;
         }
-        font-weight: 700;
+        font-weight: var(--fw-b);
       }
     }
     > ul {

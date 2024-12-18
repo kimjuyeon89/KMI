@@ -11,62 +11,10 @@
     <!-- root -->
     <div id="root">
         @@include('include/header.html')
-        <div class="page-container">
             @@include('include/sidebar.html')
-
-            <div class="page-top">
-                <div class="wrap">
-                  
-                    
-                      <div class="content">
-                        <div class="img-wrap">
-                          <div id="textbox" class="fixed-textbox">
-                            <p>언론보도</p>
-                            KMI의 언론 보도자료를<br>
-                            만날 수 있습니다.
-                          </div>
-                          <img id="image" src="../images/common/img/bg-media.png"></div>
-                      </div>
-                </div>
-              
-                <div class="sub-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item home">
-                            <a href="#" class="nav-link"><i class="ico home"></i></a>
-                            
-                        </li>
-                      <li class="nav-item">
-                        <span class="nav-current">
-                            <a href="#" class="nav-link">KMI소식
-                            </a>
-                            <i class="ico arrow-down"></i>
-                        </span>
-              
-                        <div class="sub-nav-container d-none">
-                            <ul>
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">건강정보</a></li>
-                                <li><a href="#">언론보도</a></li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <span class="nav-current">
-                            <a href="#" class="nav-link">공지사항</a>
-                            <i class="ico arrow-down"></i>
-                        </span>
-                        <div class="sub-nav-container d-none">
-                            <ul>
-                                <li><a href="#">언론보도</a></li>
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">건강정보</a></li>
-                            </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-              
-              </div>
+            @@include('include/subpage_top.html', {
+                "pagetype": "media"
+            })
             <div class="page-wrap">
                 <div class="tab-area layer">
                     <div class="tab line">
@@ -205,7 +153,6 @@
 
 
         @@include('include/footer.html')
-    </div>
     <!-- //root -->
 </body>
 
