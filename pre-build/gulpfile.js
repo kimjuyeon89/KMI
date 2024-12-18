@@ -61,7 +61,7 @@ function htmlComplie() {
         }))
         .pipe(cached('html'))
         .pipe(gulp.dest(paths.html)) 
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({stream:true})) 
 };
 
 function includeComplie() {
