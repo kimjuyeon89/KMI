@@ -127,7 +127,7 @@ function watchFiles(){
 function brwSync(){
     browserSync.init({
         server:{
-            baseDir:'../build/',
+            baseDir:'../build',
             index:'html/00_coding_list.html'
         }
     });
