@@ -164,34 +164,47 @@ $(window).on("resize", function () {
   });
 
 
+// 드롭다운 토글 (nav-current 클릭 시)
+$(".nav-item").on("click", ".nav-current", function (e) {
+  e.stopPropagation(); // 이벤트 전파 방지
 
-  //셀렉 이벤트
-  $(".nav-item").on("click", ".sub-nav-container ul li a", function (e) {
-    e.preventDefault();
+  const navItem = $(this).closest(".nav-item");
+  const subNavContainer = navItem.find(".sub-nav-container");
 
-    const selectedText = $(this).text(); // 클릭한 항목의 텍스트
-    const navItem = $(this).closest(".nav-item"); // 현재 nav-item 부모 요소
+  // 다른 드롭다운 닫기
+  $(".sub-nav-container").not(subNavContainer).addClass("d-none");
 
-    // 현재 항목 업데이트
-    navItem.find(".nav-current .nav-link").text(selectedText);
+  // 현재 드롭다운 열기/닫기
+  subNavContainer.toggleClass("d-none");
 
-    // 드롭다운 닫기
-    navItem.find(".sub-nav-container").addClass("d-none");
-  });
+  // 아이콘 변경 (arrow-down ↔ arrow-up)
+  const icon = $(this).find(".ico");
+  if (subNavContainer.hasClass("d-none")) {
+      icon.removeClass("arrow-up").addClass("arrow-down");
+  } else {
+      icon.removeClass("arrow-down").addClass("arrow-up");
+  }
+});
 
-  // 드롭다운 토글 (nav-current 클릭 시)
-  $(".nav-item").on("click", ".nav-current", function (e) {
-    e.stopPropagation(); // 이벤트 전파 방지
+// 드롭다운 항목 선택 이벤트
+$(".nav-item").on("click", ".sub-nav-container ul li a", function (e) {
+  e.preventDefault();
 
-    const navItem = $(this).closest(".nav-item");
-    const subNavContainer = navItem.find(".sub-nav-container");
+  const selectedText = $(this).text(); // 클릭한 항목의 텍스트
+  const navItem = $(this).closest(".nav-item"); // 현재 nav-item 부모 요소
+  const subNavContainer = navItem.find(".sub-nav-container");
 
-    // 다른 드롭다운 닫기
-    $(".sub-nav-container").not(subNavContainer).addClass("d-none");
+  // 현재 항목 업데이트
+  navItem.find(".nav-current .nav-link").text(selectedText);
 
-    // 현재 드롭다운 열기/닫기
-    subNavContainer.toggleClass("d-none");
-  });
+  // 드롭다운 닫기
+  subNavContainer.addClass("d-none");
+
+  // 아이콘 변경 (arrow-up → arrow-down)
+  const icon = navItem.find(".nav-current .ico");
+  icon.removeClass("arrow-up").addClass("arrow-down");
+});
+
 
 
   
