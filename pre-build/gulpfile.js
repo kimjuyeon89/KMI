@@ -128,7 +128,7 @@ function brwSync(){
     browserSync.init({
         server:{
             baseDir:'../build',
-            index:'html/index.html'
+            index:'html/00_coding_list.html'
         }
     });
 }
