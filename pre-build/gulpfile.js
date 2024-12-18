@@ -60,7 +60,7 @@ function htmlComplie() {
             indent: true
         }))
         .pipe(cached('html'))
-        .pipe(gulp.dest(paths.html))
+        .pipe(gulp.dest(paths.html)) 
         .pipe(browserSync.reload({stream:true}))
 };
 
