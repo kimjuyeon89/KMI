@@ -1,0 +1,80 @@
+/* font */
+/* flex align */
+/* flex justify-content */
+/* flex direction*/
+/* flex row */
+/* scrollbar mixin */
+/* line 4, scss/button.scss */
+button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* line 9, scss/button.scss */
+.btn-area {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	cursor: pointer;
+}
+
+/* line 17, scss/button.scss */
+.btn {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-column-gap: 5px;
+	   -moz-column-gap: 5px;
+	        column-gap: 5px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	vertical-align: top;
+	text-align: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s;
+	height: 60px;
+	min-width: 160px;
+	padding: 13px 20px;
+	border-radius: 30px;
+	font-weight: 500;
+}
+
+/* line 30, scss/button.scss */
+.btn.sm {
+	min-width: 120px;
+	height: 48px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+/* line 43, scss/button.scss */
+.btn.bg-primary {
+	background-color: var(--primary-50);
+	color: #fff;
+}
+
+/* line 47, scss/button.scss */
+.btn.bg-white {
+	background-color: var(--grayscale-0);
+	color: var(--primary-50);
+}
+
+/*# sourceMappingURL=button.css.map */

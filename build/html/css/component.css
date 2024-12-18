@@ -1,0 +1,752 @@
+/* font */
+/* flex align */
+/* flex justify-content */
+/* flex direction*/
+/* flex row */
+/* scrollbar mixin */
+/* line 5, scss/component.scss */
+.page-container {
+	height: 100%;
+	position: relative;
+}
+
+/* line 10, scss/component.scss */
+.page-wrap {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-block: 140px;
+}
+
+/* line 15, scss/component.scss */
+.page-wrap .page-inner {
+	max-width: 1400px;
+}
+
+/* line 20, scss/component.scss */
+.board-container {
+	width: 100%;
+}
+
+/* line 23, scss/component.scss */
+.board-container .board-table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+/* line 28, scss/component.scss */
+.board-container .board-table thead tr {
+	border-bottom: 1px solid var(--grayscale-20);
+}
+
+/* line 31, scss/component.scss */
+.board-container .board-table thead tr:hover {
+	background-color: var(--point-5);
+}
+
+/* line 35, scss/component.scss */
+.board-container .board-table thead tr.notice {
+	background-color: var(--grayscale-5);
+}
+
+/* line 38, scss/component.scss */
+.board-container .board-table thead tr.notice:first-of-type {
+	border-top: 1px solid var(--grayscale-90);
+}
+
+/* line 41, scss/component.scss */
+.board-container .board-table thead tr.notice:last-of-type {
+	border-bottom: 1px solid var(--grayscale-90);
+}
+
+/* line 46, scss/component.scss */
+.board-container .board-table thead tr td {
+	height: 100px;
+	padding: 12px;
+	font-size: 20px;
+	text-align: center;
+	color: #333;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+/* line 55, scss/component.scss */
+.board-container .board-table thead tr td:nth-child(2) {
+	text-align: left;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* line 63, scss/component.scss */
+.board-container .board-table thead tr td:nth-child(3), .board-container .board-table thead tr td:nth-child(4) {
+	color: var(--grayscale-70);
+	font-size: 16px;
+}
+
+/* line 69, scss/component.scss */
+.board-container .board-table thead tr td .notice-label {
+	display: inline-block;
+	padding: 8px 22px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 25px;
+	background-color: var(--primary-50);
+}
+
+/* line 83, scss/component.scss */
+.board-container .board-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+
+/* line 86, scss/component.scss */
+.board-container .board-table tbody tr:hover {
+	background-color: #f0f6ff;
+}
+
+/* line 90, scss/component.scss */
+.board-container .board-table tbody tr td {
+	height: 100px;
+	padding: 12px;
+	font-size: 20px;
+	text-align: center;
+	color: #333;
+	font-weight: 500;
+}
+
+/* line 98, scss/component.scss */
+.board-container .board-table tbody tr td:nth-child(1) {
+	font-size: 16px;
+}
+
+/* line 101, scss/component.scss */
+.board-container .board-table tbody tr td:nth-child(2) {
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* line 107, scss/component.scss */
+.board-container .board-table tbody tr td:nth-child(3), .board-container .board-table tbody tr td:nth-child(4) {
+	color: var(--grayscale-70);
+	font-size: 16px;
+}
+
+/* line 119, scss/component.scss */
+.pagination-wrap {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+/* line 124, scss/component.scss */
+.pagination-wrap .pagination {
+	margin-top: 60px;
+	margin: 60 auto;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	gap: 8px;
+}
+
+/* line 132, scss/component.scss */
+.pagination-wrap .pagination button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 40px;
+	height: 40px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* line 140, scss/component.scss */
+.pagination-wrap .pagination button:hover, .pagination-wrap .pagination button.active {
+	background-color: var(--point-5);
+	border-radius: 8px;
+}
+
+/* line 146, scss/component.scss */
+.pagination-wrap .pagination a {
+	font-size: 13px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	border: 1px solid var(--grayscale-30);
+	color: var(--grayscale-70);
+	font-weight: 700;
+}
+
+/* line 158, scss/component.scss */
+.pagination-wrap .pagination a:hover, .pagination-wrap .pagination a.active {
+	background-color: var(--primary-50);
+	border: 1px solid var(--primary-50);
+	color: #fff;
+	font-weight: 700;
+}
+
+/* line 169, scss/component.scss */
+.attachment-icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	margin-left: 12px;
+	background-color: var(--point-5);
+}
+
+/* line 178, scss/component.scss */
+.attachment-icon.bg-wh {
+	background-color: #fff;
+}
+
+/* line 183, scss/component.scss */
+.page-search-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-bottom: 60px;
+}
+
+/* line 188, scss/component.scss */
+.page-search-wrap .search-bar {
+	padding-inline: 20px;
+	position: relative;
+	width: 100%;
+	max-width: 686px;
+}
+
+/* line 193, scss/component.scss */
+.page-search-wrap .search-bar .search-dropdown {
+	position: absolute;
+	top: 100%;
+	left: 32px;
+	width: 140px;
+	border-radius: 12px;
+	border: 1px solid var(--grayscale-30);
+	background-color: #fff;
+	top: 100%;
+}
+
+/* line 203, scss/component.scss */
+.page-search-wrap .search-bar .search-dropdown ul li {
+	height: 48px;
+	padding: 10px 24px;
+}
+
+/* line 207, scss/component.scss */
+.page-search-wrap .search-bar .search-dropdown ul li:hover {
+	background: var(--point-5);
+}
+
+/* line 213, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+}
+
+/* line 217, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap .search-select {
+	position: absolute;
+	left: 32px;
+	width: calc(max(80px,9.7222vw));
+	min-width: 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+/* line 225, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap .search-select span {
+	font-size: 18px;
+}
+
+/* line 229, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap .search-input {
+	width: 100%;
+	height: calc(max(60px,3.5417vw));
+	border: 1px solid var(--grayscale-80);
+	border-radius: 50px;
+	padding: 20px 10px 20px calc(max(120px,12.9861vw));
+	font-size: 18px;
+}
+
+/* line 236, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap .search-input::-webkit-input-placeholder {
+	font-size: 18px;
+}
+.page-search-wrap .search-bar .search-wrap .search-input::-moz-placeholder {
+	font-size: 18px;
+}
+.page-search-wrap .search-bar .search-wrap .search-input:-ms-input-placeholder {
+	font-size: 18px;
+}
+.page-search-wrap .search-bar .search-wrap .search-input::-ms-input-placeholder {
+	font-size: 18px;
+}
+.page-search-wrap .search-bar .search-wrap .search-input::placeholder {
+	font-size: 18px;
+}
+
+/* line 240, scss/component.scss */
+.page-search-wrap .search-bar .search-wrap .search-btn {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	right: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	background-color: var(--grayscale-80);
+}
+
+/* line 258, scss/component.scss */
+.page-inner .page-header {
+	border-bottom: 1px solid var(--grayscale-20);
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+/* line 262, scss/component.scss */
+.page-inner .page-header .section-label {
+	font-size: 22px;
+	color: var(--point-50);
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+/* line 268, scss/component.scss */
+.page-inner .page-header .page-title {
+	font-size: 40px;
+	margin-bottom: 32px;
+	font-weight: 700;
+}
+
+/* line 273, scss/component.scss */
+.page-inner .page-header .page-meta {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 12px;
+}
+
+/* line 277, scss/component.scss */
+.page-inner .page-header .page-meta span {
+	color: var(--grayscale-70);
+}
+
+/* line 280, scss/component.scss */
+.page-inner .page-header .page-meta .line {
+	width: 1px;
+	height: 12px;
+	background-color: var(--grayscale-20);
+}
+
+/* line 287, scss/component.scss */
+.page-inner .text-content {
+	margin-top: 40px;
+}
+
+/* line 289, scss/component.scss */
+.page-inner .text-content p {
+	font-size: 18px;
+	line-height: 180%;
+}
+
+/* line 294, scss/component.scss */
+.page-inner .attachment-box {
+	background-color: var(--grayscale-5);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 32px 40px;
+	margin-top: 60px;
+}
+
+/* line 299, scss/component.scss */
+.page-inner .attachment-box li {
+	margin-bottom: 8px;
+}
+
+/* line 301, scss/component.scss */
+.page-inner .attachment-box li:last-child {
+	margin-bottom: 0;
+}
+
+/* line 304, scss/component.scss */
+.page-inner .attachment-box li a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 8px;
+}
+
+/* line 310, scss/component.scss */
+.page-inner .attachment-box li:hover, .page-inner .attachment-box li.active {
+	color: var(--primary-50);
+	font-weight: 500;
+}
+
+/* line 313, scss/component.scss */
+.page-inner .attachment-box li:hover .attachment-icon.bg-wh, .page-inner .attachment-box li.active .attachment-icon.bg-wh {
+	background-color: var(--primary-50);
+}
+
+/* line 315, scss/component.scss */
+.page-inner .attachment-box li:hover .attachment-icon.bg-wh .file, .page-inner .attachment-box li.active .attachment-icon.bg-wh .file {
+	background-image: url("../images/common/ico/ico-file-wh.png");
+}
+
+/* line 326, scss/component.scss */
+.page-inner .img-cont img {
+	width: 100%;
+}
+
+/* line 331, scss/component.scss */
+.page-inner .page-footer .page-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border-block: 1px solid var(--grayscale-20);
+	padding: 30px 40px;
+}
+
+/* line 336, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 12px;
+}
+
+/* line 340, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item .text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300px;
+}
+
+/* line 347, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item.nav-prev .prev {
+	font-weight: 500;
+}
+
+/* line 352, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item.nav-next .next {
+	font-weight: 500;
+}
+
+/* line 357, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item.disabled {
+	color: var(--grayscale-50);
+}
+
+/* line 360, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item.disabled .ico.pre-link {
+	width: 20px;
+	height: 20px;
+	background: url(../images/common/ico/ico-pre-link_disabled.png) no-repeat center;
+}
+
+/* line 365, scss/component.scss */
+.page-inner .page-footer .page-nav .nav-item.disabled .ico.next-link {
+	background: url(../images/common/ico/ico-next-link_disable.png) no-repeat center;
+}
+
+/* line 372, scss/component.scss */
+.page-inner .page-footer .btn-area {
+	margin-top: 60px;
+}
+
+/* line 378, scss/component.scss */
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+	padding: 20px;
+}
+
+/* line 385, scss/component.scss */
+.card-container .card-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+/* line 391, scss/component.scss */
+.card-container .card-item .img-cont {
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+	margin-bottom: 24px;
+}
+
+/* line 397, scss/component.scss */
+.card-container .card-item .img-cont img {
+	width: 100%;
+	height: auto;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	transition: -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease;
+	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+/* line 403, scss/component.scss */
+.card-container .card-item .img-cont::before {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1f309760;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+/* line 416, scss/component.scss */
+.card-container .card-item .img-cont::after {
+	z-index: 2;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-image: url("../images/common/ico/ico-plus.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+/* line 441, scss/component.scss */
+.card-container .card-item:hover .img-cont img {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-filter: blur(2px);
+	        filter: blur(2px);
+}
+
+/* line 446, scss/component.scss */
+.card-container .card-item:hover .img-cont::before {
+	opacity: 1;
+}
+
+/* line 450, scss/component.scss */
+.card-container .card-item:hover .img-cont::after {
+	opacity: 1;
+}
+
+/* line 456, scss/component.scss */
+.card-container .card-item .tag {
+	margin-bottom: 12px;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 4px 16px;
+	border-radius: 25px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+/* line 464, scss/component.scss */
+.card-container .card-item .tag.blue {
+	background: var(--point-10);
+}
+
+/* line 467, scss/component.scss */
+.card-container .card-item .tag.green {
+	background: #c4e5e8;
+}
+
+/* line 472, scss/component.scss */
+.card-container .card-item .title {
+	margin-bottom: 24px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* line 484, scss/component.scss */
+.card-container .card-item .date {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: cneter;
+	    -ms-flex-align: cneter;
+	        align-items: cneter;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+/* line 488, scss/component.scss */
+.card-container .card-item .date span {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 16px;
+	color: var(--grayscale-70);
+}
+
+/* line 498, scss/component.scss */
+.card-container .card-item.video .img-cont::after {
+	z-index: 2;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-image: url("../images/common/ico/ico-play.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(31, 48, 151, 0.8);
+	width: 68px;
+	height: 68px;
+	border-radius: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	opacity: 1;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+/* line 522, scss/component.scss */
+.card-container .card-item.video:hover .img-cont::after {
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 80px;
+	height: 80px;
+}
+
+@media (max-width: 768px) {
+	/* line 378, scss/component.scss */
+	.card-container {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+}
+
+/*# sourceMappingURL=component.css.map */

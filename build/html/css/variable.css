@@ -1,0 +1,240 @@
+/* font */
+/* flex align */
+/* flex justify-content */
+/* flex direction*/
+/* flex row */
+/* scrollbar mixin */
+/* line 5, scss/variable.scss */
+:root {
+	/* font */
+	--font-r: 'pre Regular';
+	--font-m: 'pre Medium';
+	--font-sb: 'pre SemiBold';
+	--font-b: 'pre Bold';
+	/* font size */
+	/* color */
+	/* Primary Colors */
+	--primary-0: #ffffff;
+	--primary-5: #edefff;
+	--primary-10: #d5d9f6;
+	--primary-20: #aab3ee;
+	--primary-30: #808ee5;
+	--primary-40: #5668dc;
+	--primary-50: #1f3097;
+	--primary-60: #19277b;
+	--primary-70: #16226a;
+	--primary-80: #10184c;
+	--primary-90: #090e2d;
+	--primary-100: #000000;
+	/* Point Colors */
+	--point-0: #ffffff;
+	--point-5: #eff5ff;
+	--point-10: #d3e1fb;
+	--point-20: #80b3ff;
+	--point-30: #4d8bff;
+	--point-40: #0069ff;
+	--point-50: #0042ff;
+	--point-60: #002eb3;
+	--point-70: #002180;
+	--point-80: #00144d;
+	--point-90: #010e34;
+	--point-100: #000000;
+	/* Grayscale Colors */
+	--grayscale-0: #ffffff;
+	--grayscale-5: #f8f8f8;
+	--grayscale-10: #f0f0f0;
+	--grayscale-20: #e4e4e4;
+	--grayscale-30: #d8d8d8;
+	--grayscale-40: #c6c6c6;
+	--grayscale-50: #8e8e8e;
+	--grayscale-60: #717171;
+	--grayscale-70: #555555;
+	--grayscale-80: #2d2d2d;
+	--grayscale-90: #1d1d1d;
+	--grayscale-100: #000000;
+	/* gray scale - text/icon/bg */
+	/* bg */
+}
+
+/* Background color utility classes */
+/* line 71, scss/variable.scss */
+.bg-primary-0 {
+	background-color: var(--primary-0);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-5 {
+	background-color: var(--primary-5);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-10 {
+	background-color: var(--primary-10);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-20 {
+	background-color: var(--primary-20);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-30 {
+	background-color: var(--primary-30);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-40 {
+	background-color: var(--primary-40);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-50 {
+	background-color: var(--primary-50);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-60 {
+	background-color: var(--primary-60);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-70 {
+	background-color: var(--primary-70);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-80 {
+	background-color: var(--primary-80);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-90 {
+	background-color: var(--primary-90);
+}
+
+/* line 71, scss/variable.scss */
+.bg-primary-100 {
+	background-color: var(--primary-100);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-0 {
+	background-color: var(--point-0);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-5 {
+	background-color: var(--point-5);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-10 {
+	background-color: var(--point-10);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-20 {
+	background-color: var(--point-20);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-30 {
+	background-color: var(--point-30);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-40 {
+	background-color: var(--point-40);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-50 {
+	background-color: var(--point-50);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-60 {
+	background-color: var(--point-60);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-70 {
+	background-color: var(--point-70);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-80 {
+	background-color: var(--point-80);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-90 {
+	background-color: var(--point-90);
+}
+
+/* line 71, scss/variable.scss */
+.bg-point-100 {
+	background-color: var(--point-100);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-0 {
+	background-color: var(--grayscale-0);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-5 {
+	background-color: var(--grayscale-5);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-10 {
+	background-color: var(--grayscale-10);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-20 {
+	background-color: var(--grayscale-20);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-30 {
+	background-color: var(--grayscale-30);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-40 {
+	background-color: var(--grayscale-40);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-50 {
+	background-color: var(--grayscale-50);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-60 {
+	background-color: var(--grayscale-60);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-70 {
+	background-color: var(--grayscale-70);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-80 {
+	background-color: var(--grayscale-80);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-90 {
+	background-color: var(--grayscale-90);
+}
+
+/* line 71, scss/variable.scss */
+.bg-grayscale-100 {
+	background-color: var(--grayscale-100);
+}
+
+/*# sourceMappingURL=variable.css.map */

@@ -1,0 +1,947 @@
+/* font */
+/* flex align */
+/* flex justify-content */
+/* flex direction*/
+/* flex row */
+/* scrollbar mixin */
+/* line 5, scss/styleguide.scss */
+pre {
+	margin: 0;
+}
+
+/* line 8, scss/styleguide.scss */
+.styleguideRoot {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* highlight js style */
+	/* --- */
+}
+
+/* line 10, scss/styleguide.scss */
+.styleguideRoot .hljs-keyword, .styleguideRoot .hljs-literal, .styleguideRoot .hljs-name, .styleguideRoot .hljs-symbol {
+	color: #569cd6;
+}
+
+/* line 11, scss/styleguide.scss */
+.styleguideRoot .hljs-link {
+	color: #569cd6;
+	text-decoration: underline;
+}
+
+/* line 12, scss/styleguide.scss */
+.styleguideRoot .hljs-built_in, .styleguideRoot .hljs-type {
+	color: #4ec9b0;
+}
+
+/* line 13, scss/styleguide.scss */
+.styleguideRoot .hljs-class, .styleguideRoot .hljs-number {
+	color: #b8d7a3;
+}
+
+/* line 14, scss/styleguide.scss */
+.styleguideRoot .hljs-meta .hljs-string, .styleguideRoot .hljs-string {
+	color: #d69d85;
+}
+
+/* line 15, scss/styleguide.scss */
+.styleguideRoot .hljs-regexp, .styleguideRoot .hljs-template-tag {
+	color: #9a5334;
+}
+
+/* line 16, scss/styleguide.scss */
+.styleguideRoot .hljs-formula, .styleguideRoot .hljs-function, .styleguideRoot .hljs-params, .styleguideRoot .hljs-subst, .styleguideRoot .hljs-title {
+	color: #dcdcdc;
+}
+
+/* line 17, scss/styleguide.scss */
+.styleguideRoot .hljs-comment, .styleguideRoot .hljs-quote {
+	color: #57a64a;
+	font-style: italic;
+}
+
+/* line 18, scss/styleguide.scss */
+.styleguideRoot .hljs-doctag {
+	color: #608b4e;
+}
+
+/* line 19, scss/styleguide.scss */
+.styleguideRoot .hljs-meta, .styleguideRoot .hljs-meta .hljs-keyword, .styleguideRoot .hljs-tag {
+	color: #9b9b9b;
+}
+
+/* line 20, scss/styleguide.scss */
+.styleguideRoot .hljs-template-variable, .styleguideRoot .hljs-variable {
+	color: #bd63c5;
+}
+
+/* line 21, scss/styleguide.scss */
+.styleguideRoot .hljs-attr, .styleguideRoot .hljs-attribute {
+	color: #9cdcfe;
+}
+
+/* line 22, scss/styleguide.scss */
+.styleguideRoot .hljs-section {
+	color: gold;
+}
+
+/* line 23, scss/styleguide.scss */
+.styleguideRoot .hljs-emphasis {
+	font-style: italic;
+}
+
+/* line 24, scss/styleguide.scss */
+.styleguideRoot .hljs-strong {
+	font-weight: 700;
+}
+
+/* line 25, scss/styleguide.scss */
+.styleguideRoot .hljs-bullet, .styleguideRoot .hljs-selector-attr, .styleguideRoot .hljs-selector-class, .styleguideRoot .hljs-selector-id, .styleguideRoot .hljs-selector-pseudo, .styleguideRoot .hljs-selector-tag {
+	color: #d7ba7d;
+}
+
+/* line 26, scss/styleguide.scss */
+.styleguideRoot .hljs-addition {
+	background-color: #144212;
+	display: inline-block;
+	width: 100%;
+}
+
+/* line 27, scss/styleguide.scss */
+.styleguideRoot .hljs-deletion {
+	background-color: #600;
+	display: inline-block;
+	width: 100%;
+}
+
+/* line 28, scss/styleguide.scss */
+.styleguideRoot .hljs {
+	line-height: normal;
+	-webkit-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+	cursor: text;
+	background: #2b2b2b;
+}
+
+/* line 29, scss/styleguide.scss */
+.styleguideRoot .hljs::-moz-selection {
+	color: inherit;
+}
+.styleguideRoot .hljs::selection {
+	color: inherit;
+}
+
+/* line 30, scss/styleguide.scss */
+.styleguideRoot .hljs:hover {
+	background-color: #000;
+}
+
+/* line 31, scss/styleguide.scss */
+.styleguideRoot .hljs-comment, .styleguideRoot .hljs-quote {
+	font-style: normal;
+}
+
+/* line 33, scss/styleguide.scss */
+.styleguideRoot .codeArea {
+	width: 100%;
+}
+
+/* line 34, scss/styleguide.scss */
+.styleguideRoot .codeArea pre {
+	max-height: 400px;
+}
+
+/* line 35, scss/styleguide.scss */
+.styleguideRoot .codeArea pre code.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 1em;
+	background: #1e1e1e;
+	color: #dcdcdc;
+	font-family: 'pre Regular';
+	font-size: 16px;
+	max-height: inherit;
+	border-radius: 8px;
+}
+
+/* line 38, scss/styleguide.scss */
+.styleguideRoot .codeArea pre.hljs-sc:hover .hljs-copy-button {
+	right: 3em !important;
+}
+
+/* line 43, scss/styleguide.scss */
+.styleguideRoot .hljs-ln-numbers {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	text-align: center;
+	color: #ccc;
+	border-right: 1px solid #CCC;
+	padding-right: 5px !important;
+}
+
+/* line 44, scss/styleguide.scss */
+.styleguideRoot .hljs-ln-code {
+	padding-left: 10px;
+	white-space: pre-wrap;
+}
+
+/* line 45, scss/styleguide.scss */
+.styleguideRoot .hljs-ln-n:before {
+	white-space: nowrap;
+}
+
+/* line 46, scss/styleguide.scss */
+.styleguideRoot code {
+	overflow-y: auto;
+	max-height: 400px;
+}
+
+/* line 49, scss/styleguide.scss */
+.styleguideRoot .codeName {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-column-gap: 10px;
+	   -moz-column-gap: 10px;
+	        column-gap: 10px;
+	font-size: 1.5rem;
+	font-family: "pre Bold";
+	color: #111;
+	margin-bottom: 14px;
+}
+
+/* line 52, scss/styleguide.scss */
+.styleguideTable {
+	border-top: 1px solid #222;
+	width: 100%;
+}
+
+/* line 53, scss/styleguide.scss */
+.styleguideTable table {
+	width: 100%;
+}
+
+/* line 54, scss/styleguide.scss */
+.styleguideTable th[scope="col"], .styleguideTable td {
+	height: 40px;
+	border: 1px solid #d8d8d8;
+	border-top: 0;
+	text-align: left;
+	padding: 0 20px;
+}
+
+/* line 55, scss/styleguide.scss */
+.styleguideTable th[scope="col"]:first-of-type, .styleguideTable td:first-of-type {
+	border-left: 0;
+}
+
+/* line 56, scss/styleguide.scss */
+.styleguideTable th[scope="col"]:last-of-type, .styleguideTable td:last-of-type {
+	border-right: 0;
+}
+
+/* line 58, scss/styleguide.scss */
+.styleguideTable th[scope="col"] {
+	font-size: 0.875rem;
+	font-family: "pre Medium";
+	color: #666;
+	background-color: #eee;
+}
+
+/* line 59, scss/styleguide.scss */
+.styleguideTable td {
+	background-color: #fff;
+}
+
+/* line 61, scss/styleguide.scss */
+.styleguideFont {
+	font-size: 2.5rem;
+	color: #111;
+}
+
+/* line 62, scss/styleguide.scss */
+.styleguideFont.rg {
+	font-family: 'pre Regular';
+}
+
+/* line 63, scss/styleguide.scss */
+.styleguideFont.md {
+	font-family: 'pre Medium';
+}
+
+/* line 64, scss/styleguide.scss */
+.styleguideFont.sb {
+	font-family: 'pre SemiBold';
+}
+
+/* line 65, scss/styleguide.scss */
+.styleguideFont.bd {
+	font-family: 'pre Bold';
+}
+
+/* line 68, scss/styleguide.scss */
+.styleguideHeadingText {
+	color: #111;
+}
+
+/* line 69, scss/styleguide.scss */
+.styleguideHeading01 {
+	font-family: 'pre Bold';
+	font-size: 1.625rem;
+}
+
+/* line 70, scss/styleguide.scss */
+.styleguideHeading01.sb {
+	font-family: 'pre SemiBold';
+}
+
+/* line 72, scss/styleguide.scss */
+.styleguideHeading02 {
+	font-family: 'pre SemiBold';
+	font-size: 1.25rem;
+}
+
+/* line 73, scss/styleguide.scss */
+.styleguideHeading03 {
+	font-family: 'pre SemiBold';
+	font-size: 1.125rem;
+}
+
+/* line 75, scss/styleguide.scss */
+.styleguideBodyText {
+	font-family: 'pre Regular';
+	color: #111;
+}
+
+/* line 76, scss/styleguide.scss */
+.styleguideBodyText.lg {
+	font-size: 1rem;
+}
+
+/* line 77, scss/styleguide.scss */
+.styleguideBodyText.m {
+	font-size: 0.875rem;
+}
+
+/* line 78, scss/styleguide.scss */
+.styleguideBodyText.ms {
+	font-size: 0.8125rem;
+}
+
+/* line 79, scss/styleguide.scss */
+.styleguideBodyText.sm {
+	font-size: 0.75rem;
+}
+
+/* line 80, scss/styleguide.scss */
+.styleguideBodyText.etc {
+	font-size: 0.6875rem;
+}
+
+/* line 82, scss/styleguide.scss */
+.styleguideContents {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	background-color: #F4F6FA;
+}
+
+/* line 83, scss/styleguide.scss */
+.styleguideContentsInner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 30px;
+	padding: 40px 45px;
+	height: 100%;
+}
+
+/* line 84, scss/styleguide.scss */
+.styleguideContentsHeader {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+/* line 85, scss/styleguide.scss */
+.styleguideContentsHeaderText {
+	font-size: 2rem;
+	font-family: "pre Bold";
+	color: #222;
+}
+
+/* line 87, scss/styleguide.scss */
+.styleguideContentsBody {
+	padding: 46px 117px 68px 0;
+	border-radius: 14px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+	        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+}
+
+/* line 90, scss/styleguide.scss */
+.styleguideContentsSection + .styleguideContentsSection {
+	margin-top: 70px;
+}
+
+/* line 92, scss/styleguide.scss */
+.styleguideContentsGroup {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 100px;
+	padding-top: 75px;
+	padding-bottom: 70px;
+	padding-left: 58px;
+}
+
+/* line 93, scss/styleguide.scss */
+.styleguideContentsGroup:last-of-type {
+	padding-bottom: 0;
+}
+
+/* line 94, scss/styleguide.scss */
+.styleguideContentsGroup.row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-column-gap: 20px;
+	   -moz-column-gap: 20px;
+	        column-gap: 20px;
+	width: 100%;
+}
+
+/* line 96, scss/styleguide.scss */
+.styleguideContentsGroup.row .icon.black {
+	background-color: #000;
+}
+
+/* line 99, scss/styleguide.scss */
+.styleguideContentsGroup.bg {
+	padding: 10px !important;
+	background-color: #446EFF;
+}
+
+/* line 101, scss/styleguide.scss */
+.styleguideContentsLabel {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: 54px;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: "pre Bold";
+	color: #111;
+	border-radius: 0 50px 50px 0;
+	background-color: #f0f0f0;
+	padding-left: 58px;
+}
+
+/* line 104, scss/styleguide.scss */
+.styleguideContentsLabel::before {
+	content: '';
+	width: 5px;
+	height: 35px;
+	border-radius: 0 5px 5px 0;
+	background-color: #446EFF;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+/* line 107, scss/styleguide.scss */
+.styleguideContentsBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 30px;
+}
+
+/* line 109, scss/styleguide.scss */
+.styleguideRow {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-column-gap: 40px;
+	   -moz-column-gap: 40px;
+	        column-gap: 40px;
+	padding-top: 75px;
+	padding-left: 58px;
+}
+
+/* line 110, scss/styleguide.scss */
+.styleguideRow .styleguideContentsGroup {
+	row-gap: 20px;
+	padding: 0;
+}
+
+/* line 111, scss/styleguide.scss */
+.styleguideRow.col {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	row-gap: 20px;
+}
+
+/* line 112, scss/styleguide.scss */
+.styleguideRow.col.type02 {
+	row-gap: 100px;
+}
+
+/* line 114, scss/styleguide.scss */
+.styleguideRow + .styleguideRow {
+	padding-bottom: 70px;
+}
+
+/* line 115, scss/styleguide.scss */
+.styleguideRowItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 20px;
+}
+
+/* line 116, scss/styleguide.scss */
+.styleguideRowItem.full {
+	width: 100%;
+}
+
+/* line 119, scss/styleguide.scss */
+.styleguideColumn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 30px;
+}
+
+/* line 120, scss/styleguide.scss */
+.styleguideColumnBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-column-gap: 95px;
+	   -moz-column-gap: 95px;
+	        column-gap: 95px;
+}
+
+/* line 122, scss/styleguide.scss */
+.styleguideSubTitle {
+	font-size: 1.5rem;
+	font-family: "pre Bold";
+	color: #111;
+}
+
+/* line 123, scss/styleguide.scss */
+.styleguideSubTitle.fs20 {
+	font-size: 1.25rem;
+}
+
+/* line 124, scss/styleguide.scss */
+.styleguideSubTitle.blue {
+	color: #157EFB;
+}
+
+/* line 126, scss/styleguide.scss */
+.styleguideText16 {
+	font-size: 1rem;
+	font-family: "pre Regular";
+	color: #111;
+}
+
+/* line 127, scss/styleguide.scss */
+.styleguideColorList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-column-gap: 30px;
+	   -moz-column-gap: 30px;
+	        column-gap: 30px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+/* line 128, scss/styleguide.scss */
+.styleguideColorItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	row-gap: 8px;
+}
+
+/* line 129, scss/styleguide.scss */
+.styleguideColorText {
+	font-size: 0.875rem;
+	font-family: "pre Regular";
+	color: #111;
+	text-transform: uppercase;
+}
+
+/* line 130, scss/styleguide.scss */
+.styleguideColorCircle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+/* line 131, scss/styleguide.scss */
+.styleguideColorCircle.primary1 {
+	background-color: #446EFF;
+}
+
+/* line 132, scss/styleguide.scss */
+.styleguideColorCircle.primary2 {
+	background-color: #3259da;
+}
+
+/* line 133, scss/styleguide.scss */
+.styleguideColorCircle.primary3 {
+	background-color: #1e44c1;
+}
+
+/* line 134, scss/styleguide.scss */
+.styleguideColorCircle.secondary1 {
+	background-color: #964eff;
+}
+
+/* line 135, scss/styleguide.scss */
+.styleguideColorCircle.secondary2 {
+	background-color: #793fce;
+}
+
+/* line 136, scss/styleguide.scss */
+.styleguideColorCircle.secondary3 {
+	background-color: #22d357;
+}
+
+/* line 137, scss/styleguide.scss */
+.styleguideColorCircle.error {
+	background-color: #ff263c;
+}
+
+/* line 138, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale1 {
+	background-color: #000;
+}
+
+/* line 139, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale2 {
+	background-color: #111;
+}
+
+/* line 140, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale3 {
+	background-color: #333;
+}
+
+/* line 141, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale4 {
+	background-color: #666;
+}
+
+/* line 142, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale5 {
+	background-color: #999;
+}
+
+/* line 143, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale6 {
+	-webkit-box-shadow: 0 0 0 1px #eee;
+	        box-shadow: 0 0 0 1px #eee;
+	background-color: #fff;
+}
+
+/* line 144, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale7 {
+	background-color: #bbb;
+}
+
+/* line 145, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale8 {
+	background-color: #ccc;
+}
+
+/* line 146, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale9 {
+	background-color: #ddd;
+}
+
+/* line 147, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale10 {
+	background-color: #eee;
+}
+
+/* line 148, scss/styleguide.scss */
+.styleguideColorCircle.gray-scale11 {
+	background-color: #444;
+}
+
+/* line 149, scss/styleguide.scss */
+.styleguideColorCircle.bg1 {
+	background-color: #f4f4f4;
+}
+
+/* line 150, scss/styleguide.scss */
+.styleguideColorCircle.bg2 {
+	background-color: #f8f8f8;
+}
+
+/* line 151, scss/styleguide.scss */
+.styleguideColorCircle.bg3 {
+	background-color: #f9f9f9;
+}
+
+/* line 152, scss/styleguide.scss */
+.styleguideColorCircle.bg4 {
+	background-color: #eaf9ff;
+}
+
+/* line 153, scss/styleguide.scss */
+.styleguideColorCircle.bg5 {
+	background-color: #edf4ff;
+}
+
+/* line 154, scss/styleguide.scss */
+.styleguideColorCircle.bg6 {
+	background-color: #f5edff;
+}
+
+/* line 158, scss/styleguide.scss */
+.styleguideLeftAreaHead {
+	padding: 35px 35px 22px 35px;
+	background-color: #446eff;
+}
+
+/* line 159, scss/styleguide.scss */
+.styleguideLeftAreaHeadBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 16px;
+}
+
+/* line 160, scss/styleguide.scss */
+.styleguideLeftAreaHeadBox a {
+	min-height: 32px;
+}
+
+/* line 161, scss/styleguide.scss */
+.styleguideLeftAreaHeadBox img {
+	display: none;
+}
+
+/* line 165, scss/styleguide.scss */
+.styleguideLeftAreaBottom {
+	position: relative;
+	/*max-height: calc(100% - 244px); overflow-y: auto;*/
+	padding: 28px 42px 28px 28px;
+	background-color: #fff;
+}
+
+/* line 166, scss/styleguide.scss */
+.styleguideTag {
+	margin-top: 22px;
+	padding: 10px 15px;
+	max-width: 174px;
+	border-radius: 23.5px;
+	background-color: #fff;
+}
+
+/* line 168, scss/styleguide.scss */
+.styleguideTagText {
+	font-size: 1.125rem;
+	font-family: "pre Bold";
+	color: #111;
+}
+
+/* line 170, scss/styleguide.scss */
+.styleguideMenuList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	row-gap: 25px;
+}
+
+/* line 171, scss/styleguide.scss */
+.styleguideMenuItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: 54px;
+	border-radius: 8px;
+}
+
+/* line 173, scss/styleguide.scss */
+.styleguideMenuItem.active {
+	background-color: #D9E1FF;
+}
+
+/* line 174, scss/styleguide.scss */
+.styleguideMenuItem.active svg path {
+	stroke: #2352F4;
+}
+
+/* line 175, scss/styleguide.scss */
+.styleguideMenuItem.active .styleguideMenuText {
+	font-family: 'pre Bold';
+	color: #2352F4;
+}
+
+/* line 178, scss/styleguide.scss */
+.styleguideMenuText {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-column-gap: 25px;
+	   -moz-column-gap: 25px;
+	        column-gap: 25px;
+	width: 100%;
+	height: 100%;
+	font-size: 1.125rem;
+	font-family: "pre Medium";
+	color: #555;
+	padding: 0 18px;
+}
+
+/* line 180, scss/styleguide.scss */
+.styleguideBtnCodingList {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	min-width: 208px;
+	height: 52px;
+	padding: 0 20px 0 14px;
+	border-radius: 15px;
+	color: #fff;
+	background-color: #454545;
+	-webkit-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+}
+
+/* line 182, scss/styleguide.scss */
+.styleguideBtnCodingListText {
+	margin-left: 10px;
+	margin-right: auto;
+	font-size: 1.125rem;
+	font-family: 'pre Bold';
+	color: currentColor;
+}
+
+/* line 183, scss/styleguide.scss */
+.styleguideBtnCodingList svg {
+	color: currentColor;
+}
+
+/* line 184, scss/styleguide.scss */
+.styleguideBtnCodingList::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ef4444;
+}
+
+/* line 189, scss/styleguide.scss */
+#styleguideLeftArea {
+	/*position: fixed;*/
+	width: 300px;
+	height: 100%;
+}
+
+/* line 190, scss/styleguide.scss */
+#styleguideMenuLine {
+	position: absolute;
+	right: 0;
+	width: 4px;
+	height: 43px;
+	border-radius: 58px 0 0 58px;
+	background-color: #446EFF;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+@media (hover: hover) {
+	/* line 194, scss/styleguide.scss */
+	.styleguideBtnCodingList:hover {
+		background-color: #000;
+	}
+}
+
+/*# sourceMappingURL=styleguide.css.map */
