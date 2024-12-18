@@ -124,11 +124,11 @@ function watchFiles(){
 
 }
 
-function brwSync(){
+function brwSync() {
     browserSync.init({
-        server:{
-            baseDir:'../build',
-            index:'html/00_coding_list.html'
+        server: {
+            baseDir: "../build/html", // 'html' 폴더를 루트로 설정
+            index: "00_coding_list.html" // 첫 페이지 파일
         }
     });
 }
