@@ -976,13 +976,11 @@
 }
 
 //페이지 공통 상단
-.page-top {
+.page-introduce {
   position: relative;
   top: calc(max(70px, 5.2083vw));
-  .wrap {
-    position: relative;
-  
-    .fixed-textbox {
+
+    .desc-wrap {
       font-size: calc(max(50px,3.1250vw));
       position: fixed;
       top: 220px;
@@ -1017,7 +1015,7 @@
         transition: transform 0.1s ease-out;
         border-radius: 40px;
       }}
-    }
+    
   }
 
   .sub-nav {

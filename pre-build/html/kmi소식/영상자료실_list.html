@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    @@include('include/head.html',{
+    @@include('../include/head.html',{
     "styleguide": false
     })
 </head>
@@ -10,10 +10,10 @@
 <body>
     <!-- root -->
     <div id="root">
-        @@include('include/header.html')
-            @@include('include/sidebar.html')
+        @@include('../include/header.html')
+            @@include('../include/sidebar.html')
 
-            @@include('include/subpage_top.html', {
+            @@include('../include/component/page-intro.html', {
                 "pagetype": "video"
             })
             <div class="page-wrap">
@@ -39,7 +39,7 @@
                     <div class="card-container">
 
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media1.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media1.png"
                                     alt="게시물 이미지" />
                                 </div>
                             <div class="tag blue">보도자료</div>
@@ -48,7 +48,7 @@
                         </div>
  
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media1.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media1.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag blue">보도자료</div>
                             <h3 class="title">hover hover 두줄까지 노출 후 말줄임표 처리 hover hover 두줄까지 노출 후 말줄임표 처리 hover
@@ -62,49 +62,49 @@
                         </div>
 
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
                             <div class="date">2024.01.18</div>
                         </div>
                         <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
+                            <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
                                     alt="게시물 이미지" /></div>
                             <div class="tag green">언론기사</div>
                             <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
@@ -132,7 +132,7 @@
             </div>
 
 
-        @@include('include/footer.html')
+        @@include('../include/footer.html')
     </div>
     <!-- //root -->
 </body>

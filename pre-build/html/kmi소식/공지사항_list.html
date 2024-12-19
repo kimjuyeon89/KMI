@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    @@include('include/head.html',{
+    @@include('../include/head.html',{
     "styleguide": false
     })
 </head>
@@ -10,9 +10,9 @@
 <body>
     <!-- root -->
     <div id="root">
-        @@include('include/header.html')
-        @@include('include/sidebar.html')
-        @@include('include/subpage_top.html', {
+        @@include('../include/sidebar.html')
+        @@include('../include/header.html')
+        @@include('../include/component/page-intro.html', {
             "pagetype": "notice"
         })
 
@@ -148,7 +148,7 @@
         </div>
 
 
-        @@include('include/footer.html')
+        @@include('../include/footer.html')
     </div>
     <!-- //root -->
 </body>

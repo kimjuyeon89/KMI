@@ -359,7 +359,7 @@ $(window).on('scroll', function () {
 
 
 // 페이지 탑 이미지 확대 이벤트
-const $textbox = $(".fixed-textbox");
+const $textbox = $(".desc-wrap");
 const $paragraph = $textbox.find("p");
 const $image = $(".zoom-img");
 

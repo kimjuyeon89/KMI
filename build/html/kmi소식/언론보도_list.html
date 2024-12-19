@@ -59,7 +59,7 @@
             <div class="header-container">
                 <div class="header-wrap container gutter-xl">
                     <div class="weather-header">
-                        <img src="../images/common/ico/icon_weather.png" alt="Weather Icon">
+                        <img src="../../images/common/ico/icon_weather.png" alt="Weather Icon">
                         <span class="temperature">18°C</span>
                         <div class="divider"></div>
                         <div class="air-quality">
@@ -250,8 +250,8 @@
                     <div class="search-wrap">
                         <div class="search-bar">
                             <div class="s-logo-box">
-                                <img src="../images/common/logo/img-kmi-logo.png" alt="kmi로고" class="s-logo">
-                                <img src="../images/common/img/img-kmi.png" alt="크미" class="s-kmi">
+                                <img src="../../images/common/logo/img-kmi-logo.png" alt="kmi로고" class="s-logo">
+                                <img src="../../images/common/img/img-kmi.png" alt="크미" class="s-kmi">
                             </div>
                             <div class="s-input-box">
                                 <input type="text" placeholder="원하는 내용을 입력해주세요" />
@@ -484,7 +484,7 @@
                   <div class="profile-section">
                   <div class="profile-wrap">
                       <div class="profile-img">
-                        <img src="../images/common/img/img-profile.png" alt="Profile"/>
+                        <img src="../../images/common/img/img-profile.png" alt="Profile"/>
                       </div>
                       <button class="login-button">로그인</button>
                   </div>
@@ -518,11 +518,11 @@
   
               <div class="chat">
                 <div class="rotating-background">
-                  <img src="../images/common/img/img-chat-bg.png" alt="Rotating Background Text" />
+                  <img src="../../images/common/img/img-chat-bg.png" alt="Rotating Background Text" />
                 </div>
                 <div class="center-image">
-                  <img src="../images/common/img/img-chat-center.png" alt="chat" class="center-image-1" />
-                  <img src="../images/common/img/img-chat-center2.png" alt="chat" class="center-image-2"/>
+                  <img src="../../images/common/img/img-chat-center.png" alt="chat" class="center-image-1" />
+                  <img src="../../images/common/img/img-chat-center2.png" alt="chat" class="center-image-2"/>
                 </div>
               </div>
               <button class="top-btn" id="topButton">
@@ -530,26 +530,22 @@
                 <span>TOP</span>
               </button>
             </div>
+            <div class="page-introduce">
+              <div class="content">
+                 
 
-            <!-- Page Top -->
-            <div class="page-top">
-              <div class="wrap">
-                <div class="content">
-                  <div class="img-wrap">
-                    
-
-                    
-
-                    
-                    <div class="fixed-textbox">
-                      <p>영상자료실</p>
-                      영상으로 만나는<br>
-                      KMI 한국의학연구소의 스토리
-                    </div>
-                    <img src="../images/common/img/bg-media.png" class="zoom-img">
-                    
-                  </div>
+                
+                <div class="desc-wrap">
+                  <p>언론보도</p>
+                  KMI의 언론 보도자료를<br>
+                  만날 수 있습니다.
                 </div>
+                <div class="img-wrap">
+                  <img src="../../images/common/img/bg-media.png" class="zoom-img">
+                </div>
+                 
+
+                 
               </div>
 
               <!-- Sub Navigation -->
@@ -591,121 +587,141 @@
                 </ul>
               </div>
             </div>
-
             <div class="page-wrap">
-                <div class="page-inner">
-                    <div class="page-search-wrap">
-                        <div class="search-bar">
-                            <div class="search-dropdown d-none">
-                                <ul>
-                                    <li>전체</li>
-                                    <li>내용</li>
-                                    <li>날짜</li>
-                                </ul>
-                            </div>
-                            <div class="search-wrap">
-                                <div class="search-select"><span>전체</span><i class="ico arrow-down"></i></div>
-                                <input type="text" placeholder="검색어를 입력하세요." class="search-input" />
-                                <button class="search-btn">
-                                    <i class="ico search-wh"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="tab-area layer">
+                    <div class="tab line">
+                        <ul role="tablist">
+                            <li id="tab_01" role="tab" aria-selected="true" aria-controls="tab-cont1" class="active">
+                                <button type="button" class="btn-tab">전체 <i class="sr-only created"> 선택됨</i></button>
+                            </li>
+                            <li id="tab_02" role="tab" aria-selected="false" aria-controls="tab-cont2">
+                                <button type="button" class="btn-tab">보도자료</button>
+                            </li>
+                            <li id="tab_03" role="tab" aria-selected="false" aria-controls="tab-cont3">
+                                <button type="button" class="btn-tab">언론기사</button>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="card-container">
-
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media1.png"
-                                    alt="게시물 이미지" />
+                    <div class="tab-conts-wrap">
+                        <section id="tab-cont1" role="tabpanel" aria-labelledby="tab_01" class="tab-conts active">
+                            <div class="page-search-wrap">
+                                <div class="search-bar">
+                                    <div class="search-dropdown d-none">
+                                        <ul>
+                                            <li>전체</li>
+                                            <li>내용</li>
+                                            <li>날짜</li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-wrap">
+                                        <div class="search-select"><span>전체</span><i class="ico arrow-down"></i></div>
+                                        <input type="text" placeholder="검색어를 입력하세요." class="search-input" />
+                                        <button class="search-btn">
+                                            <i class="ico search-wh"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            <div class="tag blue">보도자료</div>
-                            <h3 class="title">KMI한국의학연구소, 올해 권역에 연탄 약 3만8000장 지원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
- 
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media1.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag blue">보도자료</div>
-                            <h3 class="title">hover hover 두줄까지 노출 후 말줄임표 처리 hover hover 두줄까지 노출 후 말줄임표 처리 hover
-                                hover 두줄까지 노출 후 말줄임표 처리</h3>
-                            <div class="date">
-                                <span>2024.01.18</span>
-                                <span class="attachment-icon">
-                                    <i class="ico file"></i>
-                                </span>
                             </div>
-                        </div>
 
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
-                        <div class="card-item video">
-                            <div class="img-cont"> <img src="../images/common/img/img-media2.png"
-                                    alt="게시물 이미지" /></div>
-                            <div class="tag green">언론기사</div>
-                            <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
-                            <div class="date">2024.01.18</div>
-                        </div>
+                            <div class="card-container">
 
-                        <!-- 페이징 -->
-                
-                    </div>
-                    <div class="pagination-wrap">
-                        <div class="pagination">
-                            <button><i class="ico arrow-left-double"></i></button>
-                            <button><i class="ico arrow-left"></i></button>
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <button><i class="ico arrow-right"></i></button>
-                            <button><i class="ico arrow-right-double"></i></button>
-                        </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media1.png"
+                                            alt="게시물 이미지" />
+                                        </div>
+                                    <div class="tag blue">보도자료</div>
+                                    <h3 class="title">KMI한국의학연구소, 올해 권역에 연탄 약 3만8000장 지원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media1.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag blue">보도자료</div>
+                                    <h3 class="title">hover hover 두줄까지 노출 후 말줄임표 처리 hover hover 두줄까지 노출 후 말줄임표 처리 hover
+                                        hover 두줄까지 노출 후 말줄임표 처리</h3>
+                                    <div class="date">
+                                        <span>2024.01.18</span>
+                                        <span class="attachment-icon">
+                                            <i class="ico file"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="img-cont"> <img src="../../images/common/img/img-media2.png"
+                                            alt="게시물 이미지" /></div>
+                                    <div class="tag green">언론기사</div>
+                                    <h3 class="title">KMI한국의학연구소, 서귀포시 '청춘 돌봄 지원사업' 후원</h3>
+                                    <div class="date">2024.01.18</div>
+                                </div>
+
+                                <!-- 페이징 -->
+                        
+                            </div>
+                            <div class="pagination-wrap">
+                                <div class="pagination">
+                                    <button><i class="ico arrow-left-double"></i></button>
+                                    <button><i class="ico arrow-left"></i></button>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <button><i class="ico arrow-right"></i></button>
+                                    <button><i class="ico arrow-right-double"></i></button>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="tab-cont2" role="tabpanel" aria-labelledby="tab_02" class="tab-conts"></section>
+                        <section id="tab-cont3" role="tabpanel" aria-labelledby="tab_03" class="tab-conts"></section>
                     </div>
                 </div>
 
             </div>
+        </div>
 
 
         <footer class="footer">
@@ -723,7 +739,7 @@
                 </div>
               </div> 
               <div class="txt-right">
-                <img src="../images/common/logo/img-kmi-logo-wh.png" alt="KMI 로고">
+                <img src="../../images/common/logo/img-kmi-logo-wh.png" alt="KMI 로고">
                 <div class="footer-icons">
                   <a href="#" class="footer-icon" aria-label="Naver"><i class="ico naver"></i></a>
                   <a href="#" class="footer-icon" aria-label="YouTube"><i class="ico youtube"></i></a>
@@ -751,7 +767,6 @@
             </div>
           </div>
         </footer>
-    </div>
     <!-- //root -->
 </body>
 

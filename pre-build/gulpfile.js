@@ -18,6 +18,7 @@ import browserSync from 'browser-sync';
 import cached from 'gulp-cached';
 import autoPrefixer from 'gulp-autoprefixer';
 
+
 var src = {
     html : ['html/**/*.html','html/*.html','html/**/*.html'],
     include : ['html/include/*.html'],
@@ -58,7 +59,7 @@ function htmlComplie() {
             prefix: '@@',
             basepath: '@file',
             indent: true,
-            context: {} // 기본 컨텍스트 (필요시 추가 가능)
+            context: {}
         }))
         .pipe(cached('html')) // 캐시를 위한 key (목적에 맞게 설정)
         .pipe(gulp.dest('../build/html')) // 빌드 결과물을 build/html에 저장
@@ -131,7 +132,7 @@ function brwSync(){
     browserSync.init({
         server:{
             baseDir:'../build',
-            index:'html/index.html'
+            index:'html/00_coding_list.html'
         }
     });
 }
