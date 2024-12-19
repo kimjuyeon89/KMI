@@ -33,9 +33,7 @@
     }
   }
 
-  .pagination-wrap {
-    display: none;
-  }
+
   .page-wrap {
     margin-block: 100px 80px;
     padding-inline: 16px;
@@ -43,6 +41,8 @@
   #header .gnb-wrap.open {
     display: none;
   }
+
+  
 }
 
 /* 768px 이하 화면 크기 스타일 */
@@ -51,6 +51,9 @@
     pointer-events: none;
   }
 
+  .pagination-wrap {
+    display: none;
+  }
   .qmenu-wrap {
     flex-direction: column;
   }

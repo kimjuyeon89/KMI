@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.mo{
+    display: none;
+  }
 }
 // Base button styles
 .btn {
@@ -23,17 +27,25 @@
   cursor: pointer;
 
 
-  $button-sizes: (
-  "lg": (160px, 60px),
-  "md": (140px, 52px),
-  "sm": (120px, 48px)
-);
-  // Sizes
-  @each $size, $dimensions in $button-sizes {
-    &.#{$size} {
-      min-width: nth($dimensions, 1);
-      height: nth($dimensions, 2);
-    }
+  &.lg {
+    min-width: 160px;
+    height: 60px;
+  }
+  
+  &.md {
+    min-width: 140px;
+    height: 52px;
+  }
+  
+  &.sm {
+    min-width: 120px;
+    height: 48px;
+  }
+  
+  &.full {
+    width: 100%;
+    height: 48px;
+    max-width: 400px;
   }
 
   // Filled Buttons
@@ -71,7 +83,7 @@
   }
 
   // Outlined Buttons
-  &.outlined {
+  &.outline {
     border: 1px solid;
 
     &.primary {
@@ -97,6 +109,23 @@
       border-color: var(--gray-20);
       color: var(--gray-50);
       cursor: not-allowed;
+    }
+  }
+
+
+  .list-count{
+    font-size: 14px;
+    color: var(--gray-70);
+    em{
+      color:var(--primary-50)
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-area{
+    &.mo{
+      display: flex;
     }
   }
 }

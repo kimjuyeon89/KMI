@@ -13,7 +13,7 @@
         @@include('../include/sidebar.html')
         @@include('../include/header.html')
         @@include('../include/component/page-intro.html', {
-            "pagetype": "notice"
+        "pagetype": "notice"
         })
 
         <div class="page-wrap notice-list">
@@ -140,9 +140,11 @@
                     </div>
 
                 </div>
-                <div class="btn-area">
-                    <button type="button" class="btn "><i
-                            class="plus"></i>더보기<span>(<em>1</em>/<em>30</em>)</span></button>
+                <div class="btn-area mo">
+                    <button type="button" class="btn outline gray full">
+                        <i class="ico plus"></i>더보기
+                        <div class="list-count">(<em>1</em>/<span>30</span>)</div>
+                    </button>
                 </div>
             </div>
         </div>

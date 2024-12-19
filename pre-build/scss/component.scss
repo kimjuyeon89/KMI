@@ -16,6 +16,7 @@
 
 .board-container {
   width: 100%;
+  margin-bottom: 40px;
 
   .board-table {
     width: 100%;
@@ -406,7 +407,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-image: url("../images/common/ico/ico-plus.png");
+        background-image: url("../images/common/ico/ico-plus-w.png");
         background-repeat: no-repeat;
         background-position: center;
         background-color: rgba(255, 255, 255, 0.3);
@@ -521,3 +522,5 @@
     gap: 15px; // 간격 조절
   }
 }
+
+
