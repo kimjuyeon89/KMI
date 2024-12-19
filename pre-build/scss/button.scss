@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 5px;
-  font-weight: var(-fw-b);
+  font-weight: var(--fw-b);
   text-align: center;
   border-radius: 30px;
   border: none;
@@ -53,6 +53,13 @@
 
       &:hover {
         background-color:var(--gray-100);
+      }
+    
+    }
+    &.white {
+      background-color:var(--gray-0);
+      color: var(--primary-50);
+      &:hover {
       }
     
     }
